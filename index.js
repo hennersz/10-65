@@ -5,6 +5,7 @@ const { Server } = require('socket.io');
 const serve = require('koa-static');
 const mount = require('koa-mount');
 const { createReadStream } = require('fs')
+const PORT = process.env.PORT || 5000
 
 const app = new Koa();
 const router = new Router();
@@ -28,4 +29,4 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(3000)
+server.listen(PORT)
