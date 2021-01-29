@@ -16,14 +16,17 @@ router.get('/', (ctx) => {
   ctx.body = createReadStream('./static/index.html');
 });
 
+app.use(cors());
+app.use(mount('/static', serve('./static')));
 app
   .use(router.routes())
   .use(router.allowedMethods());
-app.use(mount('/static', serve('./static')));
-app.use(cors());
 
 const server = http.createServer(app.callback());
-const io = new Server(server)
+const io = new Server(server, {cors: {
+  origin: "*",
+  methods: ["GET", "POST"]
+}})
 io.on('connection', (socket) => {
   console.log('a user connected');
   socket.on('disconnect', () => {
