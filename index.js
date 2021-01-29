@@ -1,6 +1,7 @@
 const http = require('http');
 const Koa = require('koa');
 const Router = require('@koa/router');
+const cors = require('@koa/cors');
 const { Server } = require('socket.io');
 const serve = require('koa-static');
 const mount = require('koa-mount');
@@ -19,6 +20,7 @@ app
   .use(router.routes())
   .use(router.allowedMethods());
 app.use(mount('/static', serve('./static')));
+app.use(cors());
 
 const server = http.createServer(app.callback());
 const io = new Server(server)
