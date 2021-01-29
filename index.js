@@ -4,12 +4,14 @@ const Router = require('@koa/router');
 const { Server } = require('socket.io');
 const serve = require('koa-static');
 const mount = require('koa-mount');
+const { createReadStream } = require('fs')
 
 const app = new Koa();
 const router = new Router();
 
 router.get('/', (ctx) => {
-  ctx.body = 'Hello World';
+  ctx.type = 'html';
+  ctx.body = createReadStream('./static/index.html');
 });
 
 app
