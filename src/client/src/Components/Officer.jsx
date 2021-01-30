@@ -14,8 +14,6 @@ const Officer = () => {
     }, () => {
         getSocket.off(HANDLE_MOVE_EVENT, setLocation)
     })
-
-
     if (!currentKey) {
         return (
             <h6>No time to waste. Ask your dispatcher to send you somewhere.</h6>
@@ -23,6 +21,7 @@ const Officer = () => {
     }
 
     const peeps = data.people.filter(({location}) => (location == currentKey));
+    const location = data.locations.find(({key}) => key === currentKey);
 
     if (peeps.find(({ key }) => (key === personKey))) {
         return (
@@ -32,6 +31,7 @@ const Officer = () => {
 
     return (
         <div>
+            <h6>You are currently at {location.name}</h6>
             {
                 peeps.map(({ key, title, description }) => (
                     <div className="card">
