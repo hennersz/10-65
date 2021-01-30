@@ -5,7 +5,10 @@ const {
   ROLE_WITNESS, 
   IN_GAME,
   IN_LOBBY,
-  UNMATCHED
+  UNMATCHED,
+  GAME_FULL,
+  MOVE_EVENT,
+  HANDLE_MOVE_EVENT
 } = require('../client/src/constants')
 const ROLES = [ROLE_OFFICER, ROLE_DISPATCHER, ROLE_WITNESS, ROLE_BACK_OFFICE]
 const EventEmitter = require('events')
@@ -26,7 +29,7 @@ class GameServer extends EventEmitter {
       this.assignRole(socket, role)
     } else {
       console.log('no roles available')
-      socket.emit('game_state_change', {state: UNMATCHED, msg: 'no roles available'})
+      socket.emit('game_state_change', GAME_FULL)
     }
   }
 
@@ -55,7 +58,9 @@ class GameServer extends EventEmitter {
     socket.on('disconnect', ()=>{
       disconnectFn(socket)
     })
-    socket.emit('game_state_change', {state: IN_LOBBY, role: role})
+    socket.on('start', this.start.bind(this))
+    socket.emit('game_state_change', IN_LOBBY)
+    socket.emit('set_role', role)
   }
 
   disconnect(socket) {
@@ -65,7 +70,7 @@ class GameServer extends EventEmitter {
   }
 
   start(){
-    this.io.sockets.emit('game_state_change', {state: IN_GAME})
+    this.io.sockets.emit('game_state_change',IN_GAME)
   }
 
   reset() {
@@ -85,11 +90,11 @@ class Role {
 class Officer extends Role{
   constructor(gs, socket) {
     super(gs, socket, ROLE_OFFICER)
-    this.gameServer.on('move_event', this.handleMove.bind(this))
+    this.gameServer.on(HANDLE_MOVE_EVENT, this.handleMove.bind(this))
   }
 
   handleMove(location) {
-    this.socket.emit('move', location)
+    this.socket.emit(HANDLE_MOVE_EVENT, location)
   }
 }
 
@@ -97,10 +102,10 @@ class Dispatcher extends Role{
   constructor(gs, socket) {
     super(gs, socket, ROLE_DISPATCHER)
 
-    this.socket.on('move', this.handleMove.bind(this))
+    this.socket.on(MOVE_EVENT, this.handleMove.bind(this))
   }
   handleMove(location) {
-    this.gameServer.emit('move_event', location)
+    this.gameServer.emit(HANDLE_MOVE_EVENT, location)
   }
 }
 

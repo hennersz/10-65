@@ -7,15 +7,7 @@ import Dispatcher from "./Dispatcher";
 import Witness from "./Witness";
 import Officer from "./Officer";
 
-function Game(props) {
-    const [role, setRole] = useState(ROLE_OFFICER)
-
-    useEffect(() => {
-        getSocket().on('role', setRole)
-    }, () => {
-        getSocket().off('role', setRole)
-    })
-
+function Game({role}) {
     switch(role) {
         case ROLE_WITNESS:
             return (
