@@ -1,0 +1,9 @@
+$body-bg: #000;
+$font-family-sans-serif: 'Special Elite', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$border-radius: 0;
+
+$primary: #000;
+
+
+// Import Bootstrap and its default variables
+@import '../../../node_modules/bootstrap/scss/bootstrap';

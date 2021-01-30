@@ -2,10 +2,11 @@ import data from "../data/imogen.json";
 import {useEffect, useState} from "react";
 import Chat from "./Chat";
 import { getSocket } from "../utils/socket";
-import { HANDLE_MOVE_EVENT } from "../constants";
+import {HANDLE_MOVE_EVENT, IN_GAME, UNMATCHED} from "../constants";
+import {ifDev} from "../utils/ifDev";
 
 const Officer = () => {
-    const [currentKey, setLocation] = useState();
+    const [currentKey, setLocation] = useState(ifDev('barrowwoods'));
     const [personKey, setPerson] = useState();
 
     useEffect(() => {

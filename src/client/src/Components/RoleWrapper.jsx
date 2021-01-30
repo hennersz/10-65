@@ -5,7 +5,7 @@ function RoleWrapper({ role, children }) {
     const character = data.bio[role] || {};
     return (
         <React.Fragment>
-            <div class="card mb-2">
+            <div class="mb-2">
                 <div class="card-body">
                     <span class="card-title h4 me-4">{ character.title }</span>
                     <div className="btn-group">
