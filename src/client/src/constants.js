@@ -1,0 +1,8 @@
+export const UNMATCHED = 'UNMATCHED'
+export const IN_LOBBY = 'IN_LOBBY'
+export const IN_GAME = 'IN_GAME'
+export const GAME_WIN = 'GAME_WIN'
+export const ROLE_OFFICER = 'ROLE_OFFICER'
+export const ROLE_BACK_OFFICE = 'ROLE_BACK_OFFICE'
+export const ROLE_DISPATCHER = 'ROLE_DISPATCHER'
+export const ROLE_WITNESS = 'ROLE_WITNESS'

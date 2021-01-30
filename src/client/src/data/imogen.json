@@ -1,0 +1,29 @@
+{
+    "historicalRecords": [{
+        "key": "HighJump",
+        "title": "Taylor-Smith is the new High Sheilds School hero after winning regional high jump championships",
+        "body": "Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. "
+    },{
+        "key": "Party",
+        "title": "Party is the new High Sheilds School hero after winning regional high jump championships",
+        "body": "Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. "
+    }],
+    "locations": [{
+        "id": ""
+    }],
+    "bio": {
+        "ROLE_OFFICER": "Rough as biscuits",
+        "ROLE_BACK_OFFICE": "Smart Arse",
+        "ROLE_DISPATCHER": "The heart of the operation",
+        "ROLE_WITNESS": "Help"
+    },
+    "locations": [{
+        "key": "park",
+        "name": "Duck Pond",
+        "description": "A cute place with the new little duckies of spring."
+    }, {
+        "key": "shop",
+        "name": "Veras Card Shop",
+        "description": "Slightly worn down card shop at the end of the street. The owner smiles at your through the window."
+    }]
+}
