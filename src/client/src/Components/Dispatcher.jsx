@@ -1,5 +1,7 @@
 import data from "../data/imogen.json";
 import React from "react";
+import { getSocket } from "../utils/socket";
+import { MOVE_EVENT } from "../constants";
 
 const Dispatcher = () => {
     return (
@@ -12,7 +14,7 @@ const Dispatcher = () => {
                             <p className="card-text">
                                 {description}
                             </p>
-                            <button onClick={() => window.alert('Change location to ' + key)} class="btn btn-primary mt-2">Move Officer Here</button>
+                            <button onClick={() => getSocket().emit(MOVE_EVENT, key)} class="btn btn-primary mt-2">Move Officer Here</button>
                         </div>
                     </div>
                 ))

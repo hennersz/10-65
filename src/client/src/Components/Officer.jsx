@@ -1,10 +1,19 @@
 import data from "../data/imogen.json";
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Chat from "./Chat";
+import { getSocket } from "../utils/socket";
+import { HANDLE_MOVE_EVENT } from "../constants";
 
 const Officer = () => {
-    const [currentKey, setLocation] = useState('pier');
+    const [currentKey, setLocation] = useState();
     const [personKey, setPerson] = useState();
+
+    useEffect(() => {
+        getSocket().on(HANDLE_MOVE_EVENT, setLocation)
+    }, () => {
+        getSocket.off(HANDLE_MOVE_EVENT, setLocation)
+    })
+
 
     if (!currentKey) {
         return (
