@@ -6,10 +6,11 @@ import {
     IN_LOBBY,
     UNMATCHED,
     GAME_FULL,
+    GAME_WIN,
     ROLE_OFFICER,
     ROLE_DISPATCHER,
     ROLE_BACK_OFFICE,
-    ROLE_WITNESS
+    ROLE_WITNESS,
 } from "../constants";
 import {ifDev} from "../utils/ifDev";
 
@@ -54,9 +55,11 @@ function Lobby(props) {
             )
         case GAME_FULL:
             return (
-                <div>
-                    <h1>The game is full right now, sorry :/</h1>
-                </div>
+                <h1>The game is full right now, sorry :/</h1>
+            )
+        case GAME_WIN:
+            return (
+                <h1>Congrats you win!</h1>
             )
     }
 }
