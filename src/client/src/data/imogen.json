@@ -7,6 +7,22 @@
         "key": "Party",
         "title": "Party is the new High Sheilds School hero after winning regional high jump championships",
         "body": "Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. "
+    }, {
+        "key": "criminal-tool",
+        "title": "Jamie O'Toole Criminal record,",
+        "body": "14th Dec - Caught stealing bread from the Fast News convenience store and feeding it to the ducks at the duck pond.            11th March - Truancy, reported by officer on the beat to have been on the bus out of town to visit his grandfather.             9th Dec - Report of a conflict in the duck park between a boy and a dog. The boy reported to have only been interested in protecting the ducklings. Dog owner was delicious, referred to boy as 'savage' for kicking out at the dog. Owner spent the day with pastoral care at the station."
+    }, {
+        "key": "scouts",
+        "title": "Scouts celebrate 90 years in Upper Puddlebridge",
+        "body": "Big John Cripshaw local restaurateur and Scout Leader of Upper Puddlebridge for 11 years had this to say. 'The children of this town continue to show me and the community that they care about the important things in life. Putting the environment above their personal concerns.' Local resident Jane Edwards said she wishes the Scouts would make less noise on their weekly beach cleanup, as it disturbs her cats weekend routines."
+    }, {
+        "key": "child-abductions",
+        "title": "Child Abduction Report - Barrow Woods (Classified)",
+        "body": "Confirmed that 2 children went missing in 2018 while camping in the Barrow Woods. Witnesses in the area reported a battered vehicle leaving the scene in the early hours. Children were 15 and 17, and had been camping in the woods multiple times alone previously. The only possessions found was a flattened tent and some spare clothes."
+    }, {
+        "key": "death-report",
+        "title": "Death Certificate Hope Stevens",
+        "body": "Date:14th Jan Spouse:Powell Stevens Cause of death:Horse riding accident Age:32 years Burial Status: Ashes due to be scattered at Barrow Woods"
     }],
     "bio": {
         "ROLE_OFFICER": {
@@ -33,7 +49,7 @@
     "locations": [{
         "key": "park",
         "name": "Duck Pond",
-        "description": "A cute place with the new little duckies of spring."
+        "description": "Probably the most beautiful spot in town. This time of year they have chicks. Lets hope the skateboarders stay clear this time."
     }, {
         "key": "shop",
         "name": "Veras Card Shop",
@@ -42,11 +58,23 @@
         "key": "pier",
         "name": "The old Pier",
         "description": "Once the proudest part of the town, this aging pier is more busy with locals this time of year."
+    }, {
+        "key": "school",
+        "name": "High Shields School",
+        "description": "The local high school has a new banner outside 'where bright futures start'. That seems optimistic in this town."
+    }, {
+        "key": "fishchips",
+        "name": "Johns Fish & Chips",
+        "descriptions": "Proudly using 'locally caught fish' it says on the sign outside."
+    }, {
+        "key": "barrowwoods",
+        "name": "Barrow Woods",
+        "descriptions": "The forrest at the edge of town is a popular destination in the summer. This time of year most people stay away, preferring to walk near the beach were as least the glow of the town will help you see."
     }],
     "witness": [{
             "clue": "A nice lady called Jane took you the police box"
         }, {
-            "clue": "Your name is {use your first name} Taylor Smith"
+            "clue": "Your name is {use your first name} Taylor-Smith"
         }, {
             "clue": "Your sisters name is Imogen"
         }, {
@@ -71,6 +99,122 @@
             "No problem, please have a free ice cream scoop for your troubles.",
             "I really shouldn't I am on the beat.",
             "I insist. ** hands over ice cream **"
+        ]
+    }, {
+        "key": "groundskeeper",
+        "location": "school",
+        "title": "Grounds Keeper",
+        "description": "A man wearing a large scarf carrying a wheelbarrow full of tools trundles past you on the side of the road.",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "**Gruff**",
+            "Did you know of any students called Taylor-Smith?",
+            "**Gruff**",
+            "Do you know anywhere where students congregate?",
+            "**Gruff**",
+            "You have a good day sir."
+        ]
+    } , {
+        "key": "teacher",
+        "location": "school",
+        "title": "Member of school staff",
+        "description": "You see somebody closing up the school gates. They have small round glasses and a steely stare.",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "The school is closed, I am already running late.",
+            "Did you know of any students called Taylor-Smith?",
+            "Indeed, star high jumper. Athletic girl, just hangs out with the wrong crowds. Turning into a bad egg.",
+            "What do you mean wrong crowds.",
+            "She insists on hanging out with Jamie O'Toole. A mischievous one that O'Toole. But you lot in uniform should already know about him. He's been in enough trouble recently.",
+            "What kind of trouble?",
+            "Sorry I have been as helpful as I can. Goodbye, and good luck.",
+            "... Thanks I guess"
+        ]
+    }, {
+        "key": "jamie",
+        "location": "park",
+        "title": "Quiet boy",
+        "description": "Despite the business of the park this boy seems calm and happy watching the ducks",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "I ain't in no trouble am I. I just came here for the ducks. Those boys are the ones who started it.",
+            "Do you know who Imogen Taylor-Smith is?",
+            "Yes officer I do. Friend of mine from school. Not girlfriend like. She was at the park earlier.",
+            "How long ago?",
+            "Not sure officer. But not long.",
+            "How long did she stay? Did she say anything?",
+            "She said she lost her sister. Have you found her sister have you police person?",
+            "Her sister is safe with us. We are trying to make sure Imogen is safe.",
+            "Ok. Well Imogen wasn't making much sense, she said she was going to talk to boss man.",
+            "What do you mean boss man?",
+            "Scouts officer. She loves it. Got a big man in charge.",
+            "Thank you for your help.",
+            "**The boy turns back towards the pond in silence**"
+        ]
+    }, {
+        "key": "dogwalker",
+        "location": "park",
+        "title": "Dancing Dogwalker",
+        "description": "This lady has moves like Jagger, as she dances across with park with at least 11 dogs ahead. A boogie sled team.",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "**The lady moves straight past you ignoring your request for help. Maybe she can't here you, or maybe she can't stop the dogs**"
+        ]
+    }, {
+        "key": "park-kids",
+        "location": "park",
+        "title": "Skateboarding Kids",
+        "description": "These kids have some slick moves. Although everybody else in the park seems to be keeping their distance.",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "Go away Donut.",
+            "Don't you think Donut is more of an American insult.",
+            "You think that because you are a donut",
+            "You kids need to watch your manners. This is a public space",
+            "Donut",
+            "**You decide some matters are more important**"
+        ]
+    },  {
+        "key": "bigjohn",
+        "location": "fishchips",
+        "title": "The tall friendly proprietor",
+        "description": "He seems to be busy balancing both the till and the kitchen. Surely he should have somebody helping him?",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "Are you here about a missing child?",
+            "Indeed, we have a young Taylor-Smith in custody. We are looking for her older sister.",
+            "That's amazing news. Imogen has been beside herself. The poor thing is sat in the back booth beside herself.",
+            "Thank you, I will go and break the good news."
+        ]
+    },  {
+        "key": "imogen",
+        "location": "fishchips",
+        "title": "Young lady",
+        "description": "A young lady sits alone in the back booth with her big red coat still on.",
+        "conversation": [
+            "Hello. Are you Imogen?",
+            "Yes. Officer, please, have you seen my little sister?",
+            "I have good news she is with us down at the station",
+            "**Imogen leaps up giving you a big hug. John at the counter lets out a deep laugh of relief**"
+        ]
+    }, {
+        "key": "mourningman",
+        "location": "barrowwoods",
+        "title": "Distressed Man",
+        "description": "A man stands alone just a short walk from the car park. He looks like he hasn't slept.",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "Please leave me alone",
+            "Have you seen anybody pass by recently? We are investigating a missing person.",
+            "Sorry no I can't help you",
+            "Please sir, is there anything you can share with me. What are you doing here?",
+            "...",
+            "Can I please take your name sir?",
+            "Powell Stevens. Can you go now.",
+            "How long have you been here sir?",
+            "...",
+            "Do you need any help?",
+            "..."
         ]
     }]
 }
