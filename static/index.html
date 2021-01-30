@@ -11,6 +11,9 @@
     <script src="/socket.io/socket.io.js"></script>
     <script>
       var socket = io();
+      socket.on('game_state_change', function(msg) {
+        console.log(msg)
+      });
     </script>
   </body>
 </html>
