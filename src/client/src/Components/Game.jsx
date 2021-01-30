@@ -8,7 +8,7 @@ import Witness from "./Witness";
 import Officer from "./Officer";
 
 function Game(props) {
-    const [role, setRole] = useState(ROLE_OFFICER)
+    const [role, setRole] = useState(ROLE_BACK_OFFICE)
 
     useEffect(() => {
         getSocket().on('role', setRole)
