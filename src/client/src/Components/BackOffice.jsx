@@ -22,12 +22,12 @@ function BackOffice(props) {
 
     return (
         <div className="accordion accordion-flush" id="accordionFlushExample">
-            <BackOfficeCabinet lowerEnd="A" upperEnd="D" />
-            <BackOfficeCabinet lowerEnd="E" upperEnd="H" />
-            <BackOfficeCabinet lowerEnd="I" upperEnd="L" />
-            <BackOfficeCabinet lowerEnd="M" upperEnd="P" />
-            <BackOfficeCabinet lowerEnd="Q" upperEnd="T" />
-            <BackOfficeCabinet lowerEnd="U" upperEnd="Z" />
+            <BackOfficeCabinet lowerEnd="A" upperEnd="D" selectArticle={selectArticle} />
+            <BackOfficeCabinet lowerEnd="E" upperEnd="H" selectArticle={selectArticle} />
+            <BackOfficeCabinet lowerEnd="I" upperEnd="L" selectArticle={selectArticle} />
+            <BackOfficeCabinet lowerEnd="M" upperEnd="P" selectArticle={selectArticle} />
+            <BackOfficeCabinet lowerEnd="Q" upperEnd="T" selectArticle={selectArticle} />
+            <BackOfficeCabinet lowerEnd="U" upperEnd="Z" selectArticle={selectArticle} />
         </div>
     );
 }
