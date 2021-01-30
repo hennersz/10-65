@@ -32,7 +32,7 @@ const BackOfficeCabinet = ({ lowerEnd, upperEnd, selectArticle }) => {
                         cabinetRecords.length > 0 ?
                             (
                                 cabinetRecords.map(({key, title, body, ...rest}) => (
-                                    <button onClick={() => selectArticle(key)} className="btn btn-link m-2">
+                                    <button onClick={() => selectArticle(key)} className="btn btn-primary m-2">
                                         {title}
                                     </button>
                                 )
