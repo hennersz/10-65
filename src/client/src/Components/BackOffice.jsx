@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import data from '../data/imogen.json'
+import BackOfficeCabinet from "./BackOfficeCabinet";
 
 function BackOffice(props) {
     const [article, selectArticle] = useState();
@@ -18,13 +19,15 @@ function BackOffice(props) {
             </div>
         )
     }
+
     return (
-        <div>
-            {
-                data.historicalRecords.map(({ key, title, body, ...rest }) => (
-                    <button onClick={() => selectArticle(key)} class="btn btn-primary mt-2">{title}</button>
-                ))
-            }
+        <div className="accordion accordion-flush" id="accordionFlushExample">
+            <BackOfficeCabinet lowerEnd="A" upperEnd="D" selectArticle={selectArticle} />
+            <BackOfficeCabinet lowerEnd="E" upperEnd="H" selectArticle={selectArticle} />
+            <BackOfficeCabinet lowerEnd="I" upperEnd="L" selectArticle={selectArticle} />
+            <BackOfficeCabinet lowerEnd="M" upperEnd="P" selectArticle={selectArticle} />
+            <BackOfficeCabinet lowerEnd="Q" upperEnd="T" selectArticle={selectArticle} />
+            <BackOfficeCabinet lowerEnd="U" upperEnd="Z" selectArticle={selectArticle} />
         </div>
     );
 }

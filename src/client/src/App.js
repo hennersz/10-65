@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import Lobby from "./Components/Lobby";
 import { getSocket } from './utils/socket';
+import {ifDev} from "./utils/ifDev";
 
 function App() {
-  const [isConnected, setConnectedState] = useState(true)
+  const [isConnected, setConnectedState] = useState(ifDev(true, false))
   
   const onSocketConnect = (...params) => {
     setConnectedState(true);

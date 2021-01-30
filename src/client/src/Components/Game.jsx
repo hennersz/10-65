@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { getSocket } from '../utils/socket';
+import React from 'react';
 import BackOffice from './BackOffice';
 import RoleWrapper from './RoleWrapper';
 import {ROLE_BACK_OFFICE, ROLE_DISPATCHER, ROLE_OFFICER, ROLE_WITNESS} from "../constants";

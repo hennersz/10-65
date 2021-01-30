@@ -1,0 +1,1 @@
+export const ifDev = (devVar, prodVar) => (process.env.NODE_ENV === 'development' ? devVar : prodVar)
