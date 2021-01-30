@@ -19,11 +19,18 @@ class GameServer extends EventEmitter {
     this.io = io
     this.availableRoles = [...ROLES]
     this.takenRoles = {}
+    this.state = IN_LOBBY
     io.on('connection', this.connect.bind(this))
   }
 
   connect(socket) {
     console.log('connected')
+    socket.on('ready', () => {
+      this.onReady.bind(this)(socket)
+    })
+  }
+
+  onReady(socket) {
     const role = this.availableRoles.pop()
     if(role) {
       this.assignRole(socket, role)
@@ -59,7 +66,7 @@ class GameServer extends EventEmitter {
       disconnectFn(socket)
     })
     socket.on('start', this.start.bind(this))
-    socket.emit('game_state_change', IN_LOBBY)
+    socket.emit('game_state_change', this.state)
     socket.emit('set_role', role)
   }
 
@@ -71,11 +78,13 @@ class GameServer extends EventEmitter {
 
   start(){
     this.io.sockets.emit('game_state_change',IN_GAME)
+    this.state = IN_GAME
   }
 
   reset() {
     console.log('resetting')
     this.availableRoles = [...ROLES]
+    this.state = IN_LOBBY
   }
 }
 
