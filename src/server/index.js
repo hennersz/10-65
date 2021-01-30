@@ -14,14 +14,14 @@ const router = new Router();
 
 router.get('/', (ctx) => {
   ctx.type = 'html';
-  ctx.body = createReadStream('./static/index.html');
+  ctx.body = createReadStream('./src/client/build/index.html');
 }).get('/reset', (ctx) => {
   ctx.gameServer.reset()
   ctx.body = 'reset'
 });
 
 app.use(cors());
-app.use(mount('/static', serve('../static')));
+app.use(serve('./src/client/build/'));
 app
   .use(router.routes())
   .use(router.allowedMethods());
