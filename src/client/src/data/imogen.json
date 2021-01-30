@@ -1,11 +1,11 @@
 {
     "historicalRecords": [{
         "key": "HighJump",
-        "title": "Taylor-Smith is the new High Sheilds School hero after winning regional high jump championships",
+        "title": "Taylor-Smith is the new High Shields School hero after winning regional high jump championships",
         "body": "Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. "
     },{
-        "key": "Party",
-        "title": "Party is the new High Sheilds School hero after winning regional high jump championships",
+        "key": "party",
+        "title": "Taylor-Smith is the new High Shields School hero after winning regional high jump championships",
         "body": "Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. "
     }, {
         "key": "criminal-tool",
@@ -65,11 +65,11 @@
     }, {
         "key": "fishchips",
         "name": "Johns Fish & Chips",
-        "descriptions": "Proudly using 'locally caught fish' it says on the sign outside."
+        "description": "Proudly using 'locally caught fish' it says on the sign outside."
     }, {
         "key": "barrowwoods",
         "name": "Barrow Woods",
-        "descriptions": "The forrest at the edge of town is a popular destination in the summer. This time of year most people stay away, preferring to walk near the beach were as least the glow of the town will help you see."
+        "description": "The forrest at the edge of town is a popular destination in the summer. This time of year most people stay away, preferring to walk near the beach were as least the glow of the town will help you see."
     }],
     "witness": [{
             "clue": "A nice lady called Jane took you the police box"
