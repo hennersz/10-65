@@ -22,6 +22,7 @@ function Lobby(props) {
     
     switch (gameState) {
         case UNMATCHED:
+            getSocket().emit('ready')
             return (
                 <div>
                     <h1>10-65</h1>
