@@ -8,14 +8,23 @@
         "title": "Party is the new High Sheilds School hero after winning regional high jump championships",
         "body": "Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. "
     }],
-    "locations": [{
-        "id": ""
-    }],
     "bio": {
-        "ROLE_OFFICER": "Rough as biscuits",
-        "ROLE_BACK_OFFICE": "Smart Arse",
-        "ROLE_DISPATCHER": "The heart of the operation",
-        "ROLE_WITNESS": "Help"
+        "ROLE_OFFICER": {
+            "bio": "Rough as biscuits",
+            "title": "Detective Inspector {your surname}"
+        },
+        "ROLE_BACK_OFFICE": {
+            "bio": "Smart Ass",
+            "title": "Back Office Assistant"
+        },
+        "ROLE_DISPATCHER": {
+            "bio": "You move people around",
+            "title": "Dispatcher"
+        },
+        "ROLE_WITNESS": {
+            "bio": "Act as if you were 9 and lost your older sister. Below is all you know.",
+            "title": "Witness"
+        }
     },
     "locations": [{
         "key": "park",
@@ -25,5 +34,39 @@
         "key": "shop",
         "name": "Veras Card Shop",
         "description": "Slightly worn down card shop at the end of the street. The owner smiles at your through the window."
+    }, {
+        "key": "pier",
+        "name": "The old Pier",
+        "description": "Once the proudest part of the town, this aging pier is more busy with locals this time of year."
+    }],
+    "witness": [{
+            "clue": "A nice lady called Jane took you the police box"
+        }, {
+            "clue": "Your name is {use your first name} Taylor Smith"
+        }, {
+            "clue": "Your sisters name is Imogen"
+        }, {
+            "clue": "Your favourite color is purple"
+        }, {
+            "clue": "Ice cream"
+        }
+    ],
+    "people": [{
+        "key": "iceBoy",
+        "location": "pier",
+        "title": "Ice Cream Sales Person",
+        "description": "A young man stands behind an ice cream stand. He looks a little cold but waves at the little girl you are escorting as you walk past.",
+        "conversation": [
+            "Can you help me with my enquiry. Have you ever seen this little girl before. She was travelling with her sister to buy an Ice Cream earlier today.",
+            "Oh I hope everything is okay. Yes I served them Honeycomb ice cream only a few hours ago.",
+            "Did you see where they went afterwards.",
+            "Yes they went back towards town.",
+            "Can you tell me anything about the older sister.",
+            "She was wearing a bright red coat.",
+            "Thank you for your help.",
+            "No problem, please have a free ice cream scoop for your troubles.",
+            "I really shouldn't I am on the beat.",
+            "I insist. ** hands over ice cream **"
+        ]
     }]
 }
