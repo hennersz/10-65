@@ -7,8 +7,10 @@ import Dispatcher from "./Dispatcher";
 import Witness from "./Witness";
 import Officer from "./Officer";
 
+console.warn('NODE_ENV', process.env.NODE_ENV);
+
 function Game(props) {
-    const [role, setRole] = useState(ROLE_BACK_OFFICE)
+    const [role, setRole] = useState(ROLE_WITNESS)
 
     useEffect(() => {
         getSocket().on('role', setRole)

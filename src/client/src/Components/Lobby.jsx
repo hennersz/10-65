@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { getSocket } from '../utils/socket';
 import Game from './Game';
 import {IN_GAME, IN_LOBBY, UNMATCHED} from "../constants";
+import {ifDev} from "../utils/ifDev";
 
 function Lobby(props) {
-    const [gameState, setGameState] = useState(IN_GAME)
+    const [gameState, setGameState] = useState(ifDev(IN_GAME, UNMATCHED))
 
     // useEffect(() => {
     //     getSocket().on('game_state_change', setGameState)
