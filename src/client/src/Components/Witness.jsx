@@ -18,7 +18,7 @@ const Witness = ({minutes}) => {
                     return (
                         <div className="card">
                             <div className="card-body">
-                                <h5 className="card-title">{"You will remember this in " + (index - (minutes + 1)) + " minutes" }</h5>
+                                <h5 className="card-title">{"This will be revealed in " + (index - (minutes + 1)) + " minutes" }</h5>
                             </div>
                         </div>
                     )

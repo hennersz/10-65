@@ -102,15 +102,25 @@
         "description": "A very american looking garage that provides servicing, MOTs and petrol. The proprietor, Mac is often seen wearing a ten gallon hat"
     }],
     "witness": [{
-            "clue": "A nice lady called Jane took you the police box"
+            "clue": "Your name is {use your first name} Taylor-Smith. And you lost your sister Imogen."
         }, {
-            "clue": "Your name is {use your first name} Taylor-Smith"
+            "clue": "Today you had blueberry Ice Cream."
         }, {
-            "clue": "Your sisters name is Imogen"
+            "clue": "Imogen wouldn't let you throw rocks into the sea."
         }, {
-            "clue": "Your favourite color is purple"
+            "clue": "Your favourite colour is Purple."
         }, {
-            "clue": "Ice cream"
+            "clue": "You like the police officers hair."
+        }, {
+            "clue": "You like the boy at the duck pond. He lets you feed the ducks."
+        }, {
+            "clue": "You hope Dad comes back soon."
+        }, {
+            "clue": "You wish it would snow at christmas."
+        }, {
+            "clue": "Your teddy is called Ms Monster Machine, because she is part robot."
+        }, {
+            "clue": "You want to get chips. You and imogen always get chips"
         }
     ],
     "people": [{
