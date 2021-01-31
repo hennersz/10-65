@@ -12,8 +12,11 @@ function RoleWrapper({ role, children }) {
                         <button type="button" className="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#bioModal">
                             Bio
                         </button>
+                        <button type="button" className="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#caseModal">
+                            Case
+                        </button>
                         <button type="button" className="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#tipModal">
-                            Tip
+                            Tips
                         </button>
                     </div>
                 </div>
@@ -31,6 +34,20 @@ function RoleWrapper({ role, children }) {
                         </div>
                         <div className="modal-body">
                             { character.bio }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="modal fade" id="caseModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div className="modal-dialog">
+                    <div className="modal-content">
+                        <div className="modal-header">
+                            <h5 className="modal-title" id="exampleModalLabel">{ data.briefTitle }</h5>
+                            <button type="button" className="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                        </div>
+                        <div className="modal-body">
+                            { data.briefDescription }
                         </div>
                     </div>
                 </div>

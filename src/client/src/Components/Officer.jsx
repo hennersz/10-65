@@ -6,7 +6,7 @@ import {HANDLE_MOVE_EVENT, IN_GAME, UNMATCHED} from "../constants";
 import {ifDev} from "../utils/ifDev";
 
 const Officer = () => {
-    const [currentKey, setLocation] = useState(ifDev('shop'));
+    const [currentKey, setLocation] = useState(ifDev('pier'));
     const [personKey, setPerson] = useState();
 
     useEffect(() => {

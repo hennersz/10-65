@@ -1,4 +1,6 @@
 {
+    "briefTitle": "Imogen Taylor-Smith Missing",
+    "briefDescription": "Teenage child been missing since this afternoon. Younger sibling was handed into the station by a member of the public after being found alone. The sibling is the only current witness. Seems happy, but is struggling to remember how they became detached. Unable to contact Father (sole provider). No records of other family members.",
     "historicalRecords": [{
         "key": "HighJump",
         "title": "Taylor-Smith is the new High Shields School hero after winning regional high jump championships",
@@ -7,6 +9,14 @@
         "key": "criminal-tool",
         "title": "Jamie O'Toole Criminal record,",
         "body": "14th Dec - Caught stealing bread from the Fast News convenience store and feeding it to the ducks at the duck pond.            11th March - Truancy, reported by officer on the beat to have been on the bus out of town to visit his grandfather.             9th Dec - Report of a conflict in the duck park between a boy and a dog. The boy reported to have only been interested in protecting the ducklings. Dog owner was delicious, referred to boy as 'savage' for kicking out at the dog. Owner spent the day with pastoral care at the station."
+    }, {
+        "key": "criminal-ridge",
+        "title": "Jeremy Ridge Criminal record,",
+        "body": "7th Jan - Had to be removed by officers after breaking into the Church one night, eating the wafers and drinking all the wine. Was handed over to the social support team."
+    }, {
+        "key": "criminal-hilt",
+        "title": "Alison Hilt Criminal record,",
+        "body": "29th July - Caught driving without a license. 21st July - Caught speed on the entrance into town, license revoked. 18th July - Caught speeding through the high street. Given points on license. 17th July - Caught speeding by officers by the seafront, given points on license. 16th July - Caught speeding through the forrest cautioned by office on the scene."
     }, {
         "key": "scouts",
         "title": "Scouts celebrate 90 years in Upper Puddlebridge",
@@ -31,6 +41,14 @@
         "key": "planning-permission-application", 
         "title": "Planning application to build a housing estate consisting of 12 houses",
         "body": "This application has been submitted by Davis and Davis building contractors to build a new estate of 12 houses off of Puddlebridge creek road. This request is granted provided they provide funding to local road improvement and at least 30% of the constructed houses are 'affordable'"
+    }, {
+        "key": "planning-permission-pier",
+        "title": "Planning application to replace the pier with a floating cinema.",
+        "body": "Status: application withdrawn after international business person pulls funding."
+    }, {
+        "key": "planning-permission-duck-museum",
+        "title": "Planning application to build a duck museum next to the duck pond",
+        "body": "A 3 floor museum with pond views, a rooftop cafe and a community library. 3 function rooms for community space. A specially designed duck hatchery."
     }, {
         "key": "nudist-complaint",
         "title": "Official compaint by Our Lady of the Rosary catholic church against the Puddlebridge free love naturist society",
@@ -128,15 +146,25 @@
         "description": "A large family friendly pub. With warm fires and hearty meals it's very inviting. The christmas parties they host here are legendary"
     }],
     "witness": [{
-            "clue": "A nice lady called Jane took you the police box"
+            "clue": "Your name is {use your first name} Taylor-Smith. And you lost your sister Imogen."
         }, {
-            "clue": "Your name is {use your first name} Taylor-Smith"
+            "clue": "Today you had blueberry Ice Cream."
         }, {
-            "clue": "Your sisters name is Imogen"
+            "clue": "Imogen wouldn't let you throw rocks into the sea."
         }, {
-            "clue": "Your favourite color is purple"
+            "clue": "Your favourite colour is Purple."
         }, {
-            "clue": "Ice cream"
+            "clue": "You like the police officers hair."
+        }, {
+            "clue": "You like the boy at the duck pond. He lets you feed the ducks."
+        }, {
+            "clue": "You hope Dad comes back soon."
+        }, {
+            "clue": "You wish it would snow at christmas."
+        }, {
+            "clue": "Your teddy is called Ms Monster Machine, because she is part robot."
+        }, {
+            "clue": "You want to get chips. You and imogen always get chips"
         }
     ],
     "people": [{
@@ -271,6 +299,46 @@
             "...",
             "Do you need any help?",
             "..."
+        ]
+    }, {
+        "key": "veraherself",
+        "location": "shop",
+        "title": "Vera",
+        "description": "A confident and friendly lady.",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "Of course officer, please wipe your feet as you come in.",
+            "We are investigating a missing child. Young girl, mid-teens? Went missing in this area this afternoon.",
+            "Oh dear, not many children come in here you see. And my eyesight isn't what it used to be.",
+            "Of course, well please let us know if you see anything.",
+            "Would you like a 'Sorry for your loss card'?",
+            "That won't be necessary."
+        ]
+    }, {
+        "key": "pier-mother",
+        "location": "pier",
+        "title": "A mother with a pram.",
+        "description": "The baby is talking happily to themselves.",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "Erm yes.",
+            "We are investigating a missing child. Young girl, mid-teens? Went missing in this area this afternoon.",
+            "I am sorry, we only just arrived here. I will let you know if we see anything.",
+            "Thank you!"
+        ]
+    }, {
+        "key": "pier-musician",
+        "location": "pier",
+        "title": "An older man playing a guitar",
+        "description": "His soulful voice fills the area. It may not be busy, but he has quite a lot of change in his case.",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "I can but try my man.",
+            "We are investigating a missing child. Young girl, mid-teens? Went missing in this area this afternoon.",
+            "Ain't seen any wandering children, no no.",
+            "Thank you!",
+            "I have eyes like a hawk. I wouda seen something.",
+            "Well please contact us if you do"
         ]
     }]
 }
