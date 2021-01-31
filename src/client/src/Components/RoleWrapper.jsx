@@ -1,71 +1,46 @@
-import React from 'react';
+import React, {useState} from 'react';
 import data from '../data/imogen.json'
+import {Button, ButtonGroup, Modal} from 'react-bootstrap';
 
 function RoleWrapper({ role, children }) {
     const character = data.bio[role] || {};
+    const [showBio, setShowBio] = useState(false);
+    const [showCase, setShowCase] = useState(true);
+    const [showTip, setShowTip] = useState(true);
+
     return (
         <React.Fragment>
             <div class="mb-2">
                 <div class="card-body">
                     <span class="card-title h4 me-4">{ character.title }</span>
-                    <div className="btn-group">
-                        <button type="button" className="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#bioModal">
-                            Bio
-                        </button>
-                        <button type="button" className="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#caseModal">
-                            Case
-                        </button>
-                        <button type="button" className="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#tipModal">
-                            Tips
-                        </button>
-                    </div>
+                    <ButtonGroup>
+                        <Button variant="outline-primary" onClick={() => setShowBio(true)}>Bio</Button>
+                        <Button variant="outline-primary" onClick={() => setShowCase(true)}>Case</Button>
+                        <Button variant="outline-primary" onClick={() => setShowTip(true)}>Role</Button>
+                    </ButtonGroup>
                 </div>
             </div>
             {
                 children
             }
-            <div className="modal fade" id="bioModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">{ character.title + " Bio" }</h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                        </div>
-                        <div className="modal-body">
-                            { character.bio }
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="modal fade" id="caseModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">{ data.briefTitle }</h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                        </div>
-                        <div className="modal-body">
-                            { data.briefDescription }
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="modal fade" id="tipModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div className="modal-dialog">
-                    <div className="modal-content">
-                        <div className="modal-header">
-                            <h5 className="modal-title" id="exampleModalLabel">{ character.title + " Tips" }</h5>
-                            <button type="button" className="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                        </div>
-                        <div className="modal-body">
-                            { character.tip }
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <Modal show={showTip} onHide={() => {setShowTip(false)}}>
+                <Modal.Header closeButton>
+                    <Modal.Title>{ character.title + " Tips" }</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>{ character.tip }</Modal.Body>
+            </Modal>
+            <Modal show={showBio} onHide={() => {setShowBio(false)}}>
+                <Modal.Header closeButton>
+                    <Modal.Title>{ character.title + " Bio" }</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>{ character.bio }</Modal.Body>
+            </Modal>
+            <Modal show={showCase} onHide={() => {setShowCase(false)}}>
+                <Modal.Header closeButton>
+                    <Modal.Title>{ data.briefTitle }</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>{ data.briefDescription }</Modal.Body>
+            </Modal>
         </React.Fragment>
     );
 }
