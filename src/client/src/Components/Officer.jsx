@@ -6,7 +6,7 @@ import {HANDLE_MOVE_EVENT, IN_GAME, UNMATCHED} from "../constants";
 import {ifDev} from "../utils/ifDev";
 
 const Officer = () => {
-    const [currentKey, setLocation] = useState(ifDev('barrowwoods'));
+    const [currentKey, setLocation] = useState(ifDev('shop'));
     const [personKey, setPerson] = useState();
 
     useEffect(() => {
@@ -16,7 +16,7 @@ const Officer = () => {
     })
     if (!currentKey) {
         return (
-            <h6>No time to waste. Ask your dispatcher to send you somewhere.</h6>
+            <h6 className="m-4">No time to waste. Ask your dispatcher to send you somewhere.</h6>
         )
     }
 
@@ -32,6 +32,11 @@ const Officer = () => {
     return (
         <div>
             <h6>You are currently at {location.name}</h6>
+            {
+                peeps.length == 0 && (
+                    <h6 className="m-4">It appears that nobody is here.</h6>
+                )
+            }
             {
                 peeps.map(({ key, title, description }) => (
                     <div className="card">
