@@ -14,9 +14,9 @@ import {
 } from "../constants";
 import {ifDev} from "../utils/ifDev";
 
-function Lobby() {
+const Lobby = () => {
     const [gameState, setGameState] = useState(ifDev(IN_GAME, UNMATCHED))
-    const [ role, setRole] = useState(ifDev(ROLE_OFFICER, 'none'))
+    const [ role, setRole] = useState(ifDev(ROLE_BACK_OFFICE, 'none'))
     const [minutes, setMinutes] = useState(0);
     const [isTimerActive, setIsTimerActive] = useState(false);
 
@@ -43,13 +43,9 @@ function Lobby() {
 
     useEffect(() => {
         getSocket().on('game_state_change', setGameState)
-    }, () => {
-        getSocket().off('game_state_change', setGameState)
-    })
-
-    useEffect(() => {
         getSocket().on('set_role', setRole)
     }, () => {
+        getSocket().off('game_state_change', setGameState)
         getSocket.off('set_role', setRole)
     })
     

@@ -1,48 +1,45 @@
 import React from 'react';
 import data from "../data/imogen.json";
+import {Button, Accordion, Card} from "react-bootstrap";
 
 const getRecordsInAlphaRange = (lowerEnd, upperEnd) => {
     console.log(lowerEnd, upperEnd);
     return data.historicalRecords
-        .filter(({ title }) => {
+        .filter(({title}) => {
             const comparitorTitle = title.substr(0, 1).toUpperCase();
             return (comparitorTitle >= lowerEnd && comparitorTitle <= upperEnd)
-        }).sort(({ title: titleA }, { title: titleB}) => {
+        }).sort(({title: titleA}, {title: titleB}) => {
             return titleA > titleB ? 1 : -1
         })
 }
 
-const BackOfficeCabinet = ({ lowerEnd, upperEnd, selectArticle }) => {
+const BackOfficeCabinet = ({lowerEnd, upperEnd, selectArticle}) => {
     const collapseID = 'cabinetCollapsable' + lowerEnd + upperEnd;
     const cabinetRecords = getRecordsInAlphaRange(lowerEnd, upperEnd);
     return (
-        <div className="accordion-item">
-            <h2 className="accordion-header" id="flush-headingOne">
-                <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target={"#" + collapseID}>
-                    {
-                        lowerEnd + ' to ' + upperEnd
-                    }
-                </button>
-            </h2>
-            <div id={collapseID} className="accordion-collapse collapse"
-                 data-bs-parent="#accordionFlushExample">
-                <div className="accordion-body">
+        <div>
+            <Accordion.Toggle as={Card.Header} eventKey={collapseID}>
+                {
+                    lowerEnd + ' to ' + upperEnd
+                }
+            </Accordion.Toggle>
+            <Accordion.Collapse eventKey={collapseID}>
+                <div className="d-flex flex-column">
                     {
                         cabinetRecords.length > 0 ?
                             (
                                 cabinetRecords.map(({key, title, body, ...rest}) => (
-                                    <button onClick={() => selectArticle(key)} className="btn btn-primary m-2">
-                                        {title}
-                                    </button>
+                                        <Button variant="primary mt-1" onClick={() => selectArticle(key)}>
+                                            {title}
+                                        </Button>
+                                    )
                                 )
-                            )
-                        ) : (
-                                <div>Nothing see here. Just an empty chocolate bar wrapper and some cobwebs</div>
+                            ) : (
+                                <div className="m-1">Nothing see here. Just an empty chocolate bar wrapper and some cobwebs</div>
                             )
                     }
                 </div>
-            </div>
+            </Accordion.Collapse>
         </div>
     )
 }

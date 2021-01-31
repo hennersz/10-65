@@ -6,7 +6,7 @@ import Dispatcher from "./Dispatcher";
 import Witness from "./Witness";
 import Officer from "./Officer";
 
-function Game({role, minutes}) {
+const Game = ({role, minutes}) => {
     switch(role) {
         case ROLE_WITNESS:
             return (

@@ -4,6 +4,7 @@ import { getSocket } from "../utils/socket";
 import { MOVE_EVENT } from "../constants";
 import {useState} from "react";
 import Loader from "./Loader";
+import {Button} from "react-bootstrap";
 
 const Dispatcher = () => {
     const [isOfficerMoving, setOfficerMoving] = useState(false);
@@ -30,7 +31,9 @@ const Dispatcher = () => {
                             <p className="card-text">
                                 {description}
                             </p>
-                            <button onClick={bindOnLocationSelect(key)} class="btn btn-primary mt-2">Move Officer Here</button>
+                            <Button variant="primary" onClick={bindOnLocationSelect(key)} class="mt-2">
+                                Move Officer Here
+                            </Button>
                         </div>
                     </div>
                 ))

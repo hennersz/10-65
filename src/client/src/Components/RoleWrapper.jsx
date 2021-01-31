@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import data from '../data/imogen.json'
 import {Button, ButtonGroup, Modal} from 'react-bootstrap';
 
-function RoleWrapper({ role, children }) {
+const RoleWrapper = ({ role, children }) => {
     const character = data.bio[role] || {};
     const [showBio, setShowBio] = useState(false);
     const [showCase, setShowCase] = useState(true);

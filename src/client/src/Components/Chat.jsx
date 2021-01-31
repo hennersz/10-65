@@ -28,7 +28,7 @@ const Chat = ({ personKey, onClose }) => {
         setMessageIndex(messageIndex + 1)
         setTimeout(() => {
             setMessageIndex(messageIndex + 2)
-        }, 1500 )
+        }, 1000 )
     }
 
     useEffect(() => {

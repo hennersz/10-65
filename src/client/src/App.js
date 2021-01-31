@@ -4,7 +4,7 @@ import { getSocket } from './utils/socket';
 import {ifDev} from "./utils/ifDev";
 import Loader from "./Components/Loader";
 
-function App() {
+const App = () => {
   const [isConnected, setConnectedState] = useState(ifDev(true, false))
   
   const onSocketConnect = (...params) => {
