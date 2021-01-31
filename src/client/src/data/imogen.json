@@ -1,367 +1,424 @@
 {
-    "briefTitle": "Imogen Taylor-Smith Missing",
-    "briefDescription": "Teenage child been missing since this afternoon. Younger sibling was handed into the station by a member of the public after being found alone. The sibling is the only current witness. Seems happy, but is struggling to remember how they became detached. Unable to contact Father (sole provider). No records of other family members.",
-    "historicalRecords": [{
-        "key": "HighJump",
-        "title": "Taylor-Smith is the new High Shields School hero after winning regional high jump championships",
-        "body": "Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. Way more text. "
-    }, {
-        "key": "criminal-terressa",
-        "title": "Teressa Allwood Criminal record,",
-        "body": "17 Aug - Was arrested trying to climb the pier. Claimed to be rescuing the mermaids. Was given 1 week community service."
-    }, {
-        "key": "criminal-terressa",
-        "title": "Teressa Allwood Criminal record,",
-        "body": "17 Aug - Was arrested trying to climb the pier. Claimed to be rescuing the mermaids. Was given 1 week community service."
-    }, {
-        "key": "criminal-tool",
-        "title": "Jamie O'Toole Criminal record,",
-        "body": "14th Dec - Caught stealing bread from the Fast News convenience store and feeding it to the ducks at the duck pond.            11th March - Truancy, reported by officer on the beat to have been on the bus out of town to visit his grandfather.             9th Dec - Report of a conflict in the duck park between a boy and a dog. The boy reported to have only been interested in protecting the ducklings. Dog owner was delicious, referred to boy as 'savage' for kicking out at the dog. Owner spent the day with pastoral care at the station."
-    }, {
-        "key": "criminal-ridge",
-        "title": "Jeremy Ridge Criminal record,",
-        "body": "7th Jan - Had to be removed by officers after breaking into the Church one night, eating the wafers and drinking all the wine. Was handed over to the social support team."
-    }, {
-        "key": "criminal-hilt",
-        "title": "Alison Hilt Criminal record,",
-        "body": "29th July - Caught driving without a license. 21st July - Caught speed on the entrance into town, license revoked. 18th July - Caught speeding through the high street. Given points on license. 17th July - Caught speeding by officers by the seafront, given points on license. 16th July - Caught speeding through the forrest cautioned by office on the scene."
-    }, {
-        "key": "scouts",
-        "title": "Scouts celebrate 90 years in Upper Puddlebridge",
-        "body": "Big John Cripshaw local restaurateur and Scout Leader of Upper Puddlebridge for 11 years had this to say. 'The children of this town continue to show me and the community that they care about the important things in life. Putting the environment above their personal concerns.' Local resident Jane Edwards said she wishes the Scouts would make less noise on their weekly beach cleanup, as it disturbs her cats weekend routines."
-    }, {
-        "key": "child-abductions",
-        "title": "Child Abduction Report - Barrow Woods (Classified)",
-        "body": "Confirmed that 2 children went missing in 2018 while camping in the Barrow Woods. Witnesses in the area reported a battered vehicle leaving the scene in the early hours. Children were 15 and 17, and had been camping in the woods multiple times alone previously. The only possessions found was a flattened tent and some spare clothes."
-    }, {
-        "key": "death-report",
-        "title": "Death Certificate Hope Stevens",
-        "body": "Date:14th Jan Spouse:Powell Stevens Cause of death:Horse riding accident Age:32 years Burial Status: Ashes due to be scattered at Barrow Woods"
-    }, {
-        "key": "court-report",
-        "title": "Sheep rustler given life",
-        "body": "Date: 27th Jun 1987, Sentencing Summary: A mr Jenson Fiddlesworth was given life imprisonment for rustling 87 sheep from lightring farm. An unusually harsh punishment that was enabled by an old statute and given by the judge because 'Mr Fiddlesworth showed absolutely no remorse for his crimes and provoked the court'. Mr Fiddlesworths defended himself and his defence consisted of him mooning the jury and saying 'you've got no proof it was me', There was substantial proof, primarily the telltale signs of 87 sheep having been in his back garden."
-    }, {
-        "key": "political-party-registration",
-        "title": "Country side first party registration",
-        "body": "The country side first party is hereby officially registered to run in local council elections. The country side first party represents local farmers and other individuals who want to preserve the english country side"
-    }, {
-        "key": "planning-permission-application", 
-        "title": "Planning application to build a housing estate consisting of 12 houses",
-        "body": "This application has been submitted by Davis and Davis building contractors to build a new estate of 12 houses off of Puddlebridge creek road. This request is granted provided they provide funding to local road improvement and at least 30% of the constructed houses are 'affordable'"
-    }, {
-        "key": "planning-permission-pier",
-        "title": "Planning application to replace the pier with a floating cinema.",
-        "body": "Status: application withdrawn after international business person pulls funding."
-    }, {
-        "key": "planning-permission-duck-museum",
-        "title": "Planning application to build a duck museum next to the duck pond",
-        "body": "A 3 floor museum with pond views, a rooftop cafe and a community library. 3 function rooms for community space. A specially designed duck hatchery."
-    }, {
-        "key": "nudist-complaint",
-        "title": "Official compaint by Our Lady of the Rosary catholic church against the Puddlebridge free love naturist society",
-        "body": "The representatives of our lady of the rosary church allege that the Puddlebridge free love naturist society have been corrupting the youth and behaving impiously, specifically relating to the groups weekly meeting at Puddlebridge beach, 7pm every wednesday. This complaint has no legal backing, however the nudist group has been asked politely to be a bit more descrete."
-    }],
-    "bio": {
-        "ROLE_OFFICER": {
-            "bio": "Rough as biscuits, you don't always play by the rules, but my god do you get results.",
-            "title": "Detective Inspector {your surname}",
-            "role": "Your job is to interview people to find out where Imogen is. To move to a new place you will need to ask your dispatcher to send you there. They can see all locations available."
-        },
-        "ROLE_BACK_OFFICE": {
-            "bio": "Smart Ass. Can hack your way into any database from here to north Korea. Has a guy to import snus from Sweden, will tell anyone that will listen that Linux, is in fact, GNU/Linux, or as I've recently taken to calling it, GNU plus Linux. Linux is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system components comprising a full OS as defined by POSIX",
-            "title": "Back Office Data Expert",
-            "role": "You have access to large archive of records relating to the local area. Some may reveal some paths worth investigating but others can lead you on an unrelated tangent. Also don't forget to listen to clues revealed by the rest of the team."
-        },
-        "ROLE_DISPATCHER": {
-            "bio": "You're just happy to be involved. You move people around.",
-            "title": "Dispatcher",
-            "role": "Your job is crucial. You can see every location available and decide where to send your officer for further investigation. Keep the team talking, listen to clues and decide where to send your officer next."
-        },
-        "ROLE_WITNESS": {
-            "bio": "Act as if you were 9 and lost your older sister. Below is all you know.",
-            "title": "Witness",
-            "role": "You are the last person to have seen Imogen. However you are 9 and your memory is cloudy. As time goes by you may remember new things. Share what little information you remember, but try not to exaggerate or make up new ideas. Otherwise you may lead the team off the trail completely."
-        }
+  "briefTitle": "Imogen Taylor-Smith Missing",
+  "briefDescription": "Teenage child been missing since this afternoon. The younger sibling was handed into the station by a member of the public after being found alone. The sibling is the only current witness. Seems happy, but is struggling to remember how they became detached. Unable to contact Father (sole provider). No records of other family members.",
+  "historicalRecords": [
+    {
+      "key": "HighJump",
+      "title": "Taylor-Smith is the new High Shields School hero after winning regional high jump championships",
+      "body": "Thanks to the Puddlebridge Rotary society, she has been able to take advantage of the great new gymnastics facilities installed at the school. Her father said 'She loves it here, it's like her personal escape.'. Imogen added 'I am the only person who uses them in this town. I hope to inspire others.'"
     },
-    "locations": [{
-        "key": "park",
-        "name": "Duck Pond",
-        "description": "Probably the most beautiful spot in town. This time of year they have chicks. Lets hope the skateboarders stay clear this time."
-    }, {
-        "key": "shop",
-        "name": "Veras Card Shop",
-        "description": "Slightly worn down card shop at the end of the street. The owner smiles at your through the window."
-    }, {
-        "key": "pier",
-        "name": "The old Pier",
-        "description": "Once the proudest part of the town, this aging pier is more busy with locals this time of year."
-    }, {
-        "key": "school",
-        "name": "High Shields School",
-        "description": "The local high school has a new banner outside 'where bright futures start'. That seems optimistic in this town."
-    }, {
-        "key": "fishchips",
-        "name": "Johns Fish & Chips",
-        "description": "Proudly using 'locally caught fish' it says on the sign outside."
-    }, {
-        "key": "barrowwoods",
-        "name": "Barrow Woods",
-        "description": "The forrest at the edge of town is a popular destination in the summer. This time of year most people stay away, preferring to walk near the beach were as least the glow of the town will help you see."
-    }, {
-        "key": "beach",
-        "name": "Puddlebridge Beach",
-        "description": "Puddlebridge beach is a small sandy beach with high cliffs and thick shubbery surrounding it, making it a very secluded spot. The water laps gently against the sand and in summer is rather inviting."
-    }, {
-        "key": "church",
-        "name": "Our Lady of the Rosary catholic church",
-        "description":"A large and imposing gothic church from the early 13th century. Once famed for its witch trials, it is now known for its bake sales and remarkably boring sermons."
-    }, {
-        "key": "indianRestaurant",
-        "name": "Raj's Dosa Hut",
-        "description": "Boasting the finest south Indian cuisine for miles around, Raj's has been a favourite of the local community for nearly 30 years now."
-    }, {
-        "key": "garage",
-        "name": "Big Mac's car hole",
-        "description": "A very american looking garage that provides servicing, MOTs and petrol. The proprietor, Mac is often seen wearing a ten gallon hat"
-    }, {
-        "key": "postOffice",
-        "name": "Puddlebridge sorting office",
-        "description": "A large sorting office, supplying post to much of the surrounding area. At weekends there is always a long queue out the door of people coming to collect packages."
-    }, {
-        "key": "hardwareShop",
-        "name": "The Old Ironmonger",
-        "description": "An impressive looking building with thick stone walls and cast iron fixtures. It is staffed almost entierly by weather beaten ex-sailors, no one knows why..."
-    }, {
-        "key": "computerRepairShop",
-        "name": "Local PC services",
-        "description": "Boasting same day repairs on the sign above the door, this shop is deceptively large. Customers see a relatively small shop front crammed with old computer parts, but out back is a large warehouse like storage area."
-    }, {
-        "key": "pub1",
-        "name": "The Brewers Arms",
-        "description": "A self professed 'old man pub'. It has a distinctive smell of chip fat, stale cigarette smoke and spilt ale. The core customer base is very loyal to this pub."
-    }, {
-        "key": "pub2",
-        "name": "Micronaut",
-        "description": "'The home of craft beer in Puddlebridge'. This pub contains a microbrewery and imports beers from all around the world. It attracts a younger crowd."
-    }, {
-        "key": "pub3",
-        "name": "The Fighting Dog",
-        "description": "A rough looking, flat roofed pub that attracts Puddlebridges criminal underworld. The kind of place parents urge their children to stay away from."
-    }, {
-        "key": "pub4",
-        "name": "The White Stallion",
-        "description": "A large family friendly pub. With warm fires and hearty meals it's very inviting. The christmas parties they host here are legendary"
-    }],
-    "witness": [{
-            "clue": "Your name is {use your first name} Taylor-Smith. And you lost your sister Imogen."
-        }, {
-            "clue": "Today you had blueberry Ice Cream."
-        }, {
-            "clue": "Imogen wouldn't let you throw rocks into the sea."
-        }, {
-            "clue": "Your teddy is called Ms Monster Machine, because she is part robot."
-        }, {
-            "clue": "Your favourite colour is Purple."
-        }, {
-            "clue": "You like the boy at the duck pond. He lets you feed the ducks."
-        }, {
-            "clue": "You hope Dad comes back soon."
-        }, {
-            "clue": "You wish it would snow at christmas."
-        }, {
-            "clue": "You want to get chips. You and imogen always get chips"
-        }
-    ],
-    "people": [{
-        "key": "iceBoy",
-        "location": "pier",
-        "title": "Ice Cream Sales Person",
-        "description": "A young man stands behind an ice cream stand. He looks a little cold but waves at the little girl you are escorting as you walk past.",
-        "conversation": [
-            "Can you help me with my enquiry. Have you ever seen this little girl before. She was travelling with her sister to buy an Ice Cream earlier today.",
-            "Oh I hope everything is okay. Yes I served them blueberry ice cream only a few hours ago.",
-            "Did you see where they went afterwards.",
-            "Yes they went back towards town.",
-            "Can you tell me anything about the older sister.",
-            "She was wearing a bright red coat.",
-            "Thank you for your help.",
-            "No problem, please have a free ice cream scoop for your troubles.",
-            "I really shouldn't I am on the beat.",
-            "I insist. ** hands over ice cream **"
-        ]
-    }, {
-        "key": "groundskeeper",
-        "location": "school",
-        "title": "Grounds Keeper",
-        "description": "A man wearing a large scarf carrying a wheelbarrow full of tools trundles past you on the side of the road.",
-        "conversation": [
-            "Hello. Can you help me with my enquiry.",
-            "**Gruff**",
-            "Did you know of any students called Taylor-Smith?",
-            "**Gruff**",
-            "Do you know anywhere where students congregate?",
-            "**Gruff**",
-            "You have a good day sir."
-        ]
-    } , {
-        "key": "teacher",
-        "location": "school",
-        "title": "Member of school staff",
-        "description": "You see somebody closing up the school gates. They have small round glasses and a steely stare.",
-        "conversation": [
-            "Hello. Can you help me with my enquiry.",
-            "The school is closed, I am already running late.",
-            "Did you know of any students called Taylor-Smith?",
-            "Indeed, star high jumper. Athletic girl, just hangs out with the wrong crowds. Turning into a bad egg.",
-            "What do you mean wrong crowds.",
-            "She insists on hanging out with Jamie O'Toole. A mischievous one that O'Toole. But you lot in uniform should already know about him. He's been in enough trouble recently.",
-            "What kind of trouble?",
-            "Sorry I have been as helpful as I can. Goodbye, and good luck.",
-            "... Thanks I guess"
-        ]
-    }, {
-        "key": "jamie",
-        "location": "park",
-        "title": "Quiet boy",
-        "description": "Despite the business of the park this boy seems calm and happy watching the ducks",
-        "conversation": [
-            "Hello. Can you help me with my enquiry.",
-            "I ain't in no trouble am I. I just came here for the ducks. Those boys are the ones who started it.",
-            "Do you know who Imogen Taylor-Smith is?",
-            "Yes officer I do. Friend of mine from school. Not girlfriend like. She was at the park earlier.",
-            "How long ago?",
-            "Not sure officer. But not long.",
-            "How long did she stay? Did she say anything?",
-            "She said she lost her sister. Have you found her sister have you police person?",
-            "Her sister is safe with us. We are trying to make sure Imogen is safe.",
-            "Ok. Well Imogen wasn't making much sense, she said she was going to talk to boss man.",
-            "What do you mean boss man?",
-            "Scouts officer. She loves it. Got a big man in charge.",
-            "Thank you for your help.",
-            "**The boy turns back towards the pond in silence**"
-        ]
-    }, {
-        "key": "dogwalker",
-        "location": "park",
-        "title": "Dancing Dogwalker",
-        "description": "This lady has moves like Jagger, as she dances across with park with at least 11 dogs ahead. A boogie sled team.",
-        "conversation": [
-            "Hello. Can you help me with my enquiry.",
-            "**The lady moves straight past you ignoring your request for help. Maybe she can't here you, or maybe she can't stop the dogs**"
-        ]
-    }, {
-        "key": "park-kids",
-        "location": "park",
-        "title": "Skateboarding Kids",
-        "description": "These kids have some slick moves. Although everybody else in the park seems to be keeping their distance.",
-        "conversation": [
-            "Hello. Can you help me with my enquiry.",
-            "Go away Donut.",
-            "Don't you think Donut is more of an American insult.",
-            "You think that because you are a donut",
-            "You kids need to watch your manners. This is a public space",
-            "Donut",
-            "**You decide some matters are more important**"
-        ]
-    },  {
-        "key": "bigjohn",
-        "location": "fishchips",
-        "title": "The tall friendly proprietor",
-        "description": "He seems to be busy balancing both the till and the kitchen. Surely he should have somebody helping him?",
-        "conversation": [
-            "Hello. Can you help me with my enquiry.",
-            "Are you here about a missing child?",
-            "Indeed, we have a young Taylor-Smith in custody. We are looking for her older sister.",
-            "That's amazing news. Imogen has been beside herself. The poor thing is sat in the back booth beside herself.",
-            "Thank you, I will go and break the good news."
-        ]
-    },  {
-        "key": "imogen",
-        "location": "fishchips",
-        "title": "Young lady",
-        "description": "A young lady sits alone in the back booth with her big red coat still on.",
-        "conversation": [
-            "Hello. Are you Imogen?",
-            "Yes. Officer, please, have you seen my little sister?",
-            "I have good news she is with us down at the station",
-            "**Imogen leaps up giving you a big hug. John at the counter lets out a deep laugh of relief**"
-        ]
-    }, {
-        "key": "mourningman",
-        "location": "barrowwoods",
-        "title": "Distressed Man",
-        "description": "A man stands alone just a short walk from the car park. He looks like he hasn't slept.",
-        "conversation": [
-            "Hello. Can you help me with my enquiry.",
-            "Please leave me alone",
-            "Have you seen anybody pass by recently? We are investigating a missing person.",
-            "Sorry no I can't help you",
-            "Please sir, is there anything you can share with me. What are you doing here?",
-            "...",
-            "Can I please take your name sir?",
-            "Powell Stevens. Can you go now.",
-            "How long have you been here sir?",
-            "...",
-            "Do you need any help?",
-            "..."
-        ]
-    }, {
-        "key": "veraherself",
-        "location": "shop",
-        "title": "Vera",
-        "description": "A confident and friendly lady.",
-        "conversation": [
-            "Hello. Can you help me with my enquiry.",
-            "Of course officer, please wipe your feet as you come in.",
-            "We are investigating a missing child. Young girl, mid-teens? Went missing in this area this afternoon.",
-            "Oh dear, not many children come in here you see. And my eyesight isn't what it used to be.",
-            "Of course, well please let us know if you see anything.",
-            "Would you like a 'Sorry for your loss card'?",
-            "That won't be necessary."
-        ]
-    }, {
-        "key": "pier-mother",
-        "location": "pier",
-        "title": "A mother with a pram.",
-        "description": "The baby is talking happily to themselves.",
-        "conversation": [
-            "Hello. Can you help me with my enquiry.",
-            "Erm yes.",
-            "We are investigating a missing child. Young girl, mid-teens? Went missing in this area this afternoon.",
-            "I am sorry, we only just arrived here. I will let you know if we see anything.",
-            "Thank you!"
-        ]
-    }, {
-        "key": "pier-musician",
-        "location": "pier",
-        "title": "An older man playing a guitar",
-        "description": "His soulful voice fills the area. It may not be busy, but he has quite a lot of change in his case.",
-        "conversation": [
-            "Hello. Can you help me with my enquiry.",
-            "I can but try my man.",
-            "We are investigating a missing child. Young girl, mid-teens? Went missing in this area this afternoon.",
-            "Ain't seen any wandering children, no no.",
-            "Thank you!",
-            "I have eyes like a hawk. I wouda seen something.",
-            "Well please contact us if you do"
-        ]
-    }, {
-        "key": "churchReverend",
-        "location": "church",
-        "title": "Reverend Smallburn",
-        "description": "A thin, pensive looking man. He is deeply engrossed in a bible",
-        "conversation": [
-            "Good afternoon reverend, I was wondering if you can help me?",
-            "**Looks up, startled**. Yes of course officer. Always a pleasure to help out our local constabulary",
-            "A young girl, mid teens, has gone missing this afternoon. Have you seen or heard anything?",
-            "No, not a peep. Young people are not interested in the word of god these days, they'd rather be looking at the tik toks and the Kim Kardashians. Ghastly if you ask me.",
-            "I see, well thanks for your time anyway.",
-            "Oh officer, I send a complaint in about **whispers** 'nudists' a while back, did you get it?",
-            "Yes we did, but as has already been explained, they aren't actually doing anything illegal.",
-            "Still doesn't seem right to me...",
-            "If that's all I'll be going now.",
-            "Yes, god bless, have a good day."
-        ]
-    }]
+    {
+      "key": "criminal-terressa",
+      "title": "Teressa Allwood Criminal record,",
+      "body": "17 Aug - Was arrested trying to climb the pier. Claimed to be rescuing the mermaids. Was given 1-week community service."
+    },
+    {
+      "key": "criminal-terressa",
+      "title": "Teressa Allwood Criminal record,",
+      "body": "17 Aug - Was arrested trying to climb the pier. Claimed to be rescuing the mermaids. Was given 1-week community service."
+    },
+    {
+      "key": "criminal-tool",
+      "title": "Jamie O'Toole Criminal record,",
+      "body": "14th Dec - Caught stealing bread from the Fast News convenience store and feeding it to the ducks at the duck pond.            11th March - Truancy, reported by an officer on the beat to have been on the bus out of town to visit his grandfather.             9th Dec - Report of a conflict in the duck park between a boy and a dog. The boy reported having only been interested in protecting the ducklings. The dog owner was delicious, referred to the boy as 'savage' for kicking out at the dog. The owner spent the day with pastoral care at the station."
+    },
+    {
+      "key": "criminal-ridge",
+      "title": "Jeremy Ridge Criminal record,",
+      "body": "7th Jan - Had to be removed by officers after breaking into the Church one night, eating the wafers, and drinking all the wine. Was handed over to the social support team."
+    },
+    {
+      "key": "criminal-hilt",
+      "title": "Alison Hilt Criminal record,",
+      "body": "29th July - Caught driving without a license. 21st July - Caught speeding on the entrance into the town, license revoked. 18th July - Caught speeding through the high street. Given points on license. 17th July - Caught speeding by officers by the seafront, given points on license. 16th July - Caught speeding through the forest cautioned by an officer on the scene."
+    },
+    {
+      "key": "scouts",
+      "title": "Scouts celebrate 90 years in Upper Puddlebridge",
+      "body": "Big John Cripshaw local restaurateur and Scout Leader of Upper Puddlebridge for 11 years had this to say. 'The children of this town continue to show me and the community that they care about the important things in life. Putting the environment above their personal concerns.' Local resident Jane Edwards said she wishes the Scouts would make less noise on their weekly beach cleanup, as it disturbs her cats' weekend routines."
+    },
+    {
+      "key": "child-abductions",
+      "title": "Child Abduction Report - Barrow Woods (Classified)",
+      "body": "Confirmed that 2 children went missing in 2018 while camping in the Barrow Woods. Witnesses in the area reported a battered vehicle leaving the scene in the early hours. Children were 15 and 17 and had been camping in the woods multiple times alone previously. The only possessions found was a flattened tent and some spare clothes."
+    },
+    {
+      "key": "death-report",
+      "title": "Death Certificate Hope Stevens",
+      "body": "Date:14th Jan Spouse: Powell Stevens Cause of death: Horse riding accident Age:32 years Burial Status: Ashes due to be scattered at Barrow Woods"
+    },
+    {
+      "key": "court-report",
+      "title": "Sheep rustler given life",
+      "body": "Date: 27th Jun 1987, Sentencing Summary: A Mr. Jenson Fiddlesworth was given life imprisonment for rustling 87 sheep from Lightring farm. An unusually harsh punishment that was enabled by an old statute and given by the judge because 'Mr. Fiddlesworth showed absolutely no remorse for his crimes and provoked the court'. Mr. Fiddlesworths defended himself and his defense consisted of him mooning the jury and saying 'you've got no proof it was me', There was substantial proof, primarily the telltale signs of 87 sheep having been in his back garden."
+    },
+    {
+      "key": "political-party-registration",
+      "title": "Country side first party registration",
+      "body": "The countryside first party is hereby officially registered to run in local council elections. The countryside first-party represents local farmers and other individuals who want to preserve the English countryside"
+    },
+    {
+      "key": "planning-permission-application",
+      "title": "Planning application to build a housing estate consisting of 12 houses",
+      "body": "This application has been submitted by Davis and Davis building contractors to build a new estate of 12 houses off of Puddlebridge creek road. This request is granted provided they provide funding to local road improvement and at least 30% of the constructed houses are 'affordable'"
+    },
+    {
+      "key": "planning-permission-pier",
+      "title": "Planning application to replace the pier with a floating cinema.",
+      "body": "Status: application withdrawn after international business person pulls funding."
+    },
+    {
+      "key": "planning-permission-duck-museum",
+      "title": "Planning application to build a duck museum next to the duck pond",
+      "body": "A 3-floor museum with pond views, a rooftop cafe, and a community library. 3 function rooms for community space. A specially designed duck hatchery."
+    },
+    {
+      "key": "nudist-complaint",
+      "title": "Official complaint by Our Lady of the Rosary Catholic church against the Puddlebridge free love naturist society",
+      "body": "The representatives of our lady of the rosary church allege that the Puddlebridge free love naturist society has been corrupting the youth and behaving impiously, specifically relating to the group's weekly meeting at Puddlebridge beach, 7 pm every Wednesday. This complaint has no legal backing, however, the nudist group has been asked politely to be a bit more discrete."
+    }
+  ],
+  "bio": {
+    "ROLE_OFFICER": {
+      "bio": "Rough as biscuits, you don't always play by the rules, but my god do you get results.",
+      "title": "Detective Inspector {your surname}",
+      "role": "Your job is to interview people to find out where Imogen is. To move to a new place you will need to ask your dispatcher to send you there. They can see all locations available."
+    },
+    "ROLE_BACK_OFFICE": {
+      "bio": "Smart Ass. Can hack your way into any database from here to North Korea. Has a guy to import snus from Sweden, will tell anyone that will listen that Linux, is in fact, GNU/Linux, or as I've recently taken to calling it, GNU plus Linux. Linux is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities, and vital system components comprising a full OS as defined by POSIX",
+      "title": "Back Office Data Expert",
+      "role": "You have access to a large archive of records relating to the local area. Some may reveal some paths worth investigating but others can lead you on an unrelated tangent. Also, don't forget to listen to clues revealed by the rest of the team."
+    },
+    "ROLE_DISPATCHER": {
+      "bio": "You're just happy to be involved. You move people around.",
+      "title": "Dispatcher",
+      "role": "Your job is crucial. You can see every location available and decide where to send your officer for further investigation. Keep the team talking, listen to clues and decide where to send your officer next."
+    },
+    "ROLE_WITNESS": {
+      "bio": "Act as if you were 9 and lost your older sister. Below is all you know.",
+      "title": "Witness",
+      "role": "You are the last person to have seen Imogen. However, you are 9 and your memory is cloudy. As time goes by you may remember new things. Share what little information you remember, but try not to exaggerate or make up new ideas. Otherwise, you may lead the team off the trail completely."
+    }
+  },
+  "locations": [
+    {
+      "key": "indianRestaurant",
+      "name": "Raj's Dosa Hut",
+      "description": "Boasting the finest south Indian cuisine for miles around, Raj's has been a favorite of the local community for nearly 30 years now."
+    },
+    {
+      "key": "pub4",
+      "name": "The White Stallion",
+      "description": "A large family-friendly pub. With warm fires and hearty meals, it's very inviting. The Christmas parties they host here are legendary"
+    },
+    {
+      "key": "garage",
+      "name": "Big Mac's car hole",
+      "description": "A very American looking garage that provides servicing, MOTs and petrol. The proprietor, Mac is often seen wearing a ten-gallon hat"
+    },
+    {
+      "key": "postOffice",
+      "name": "Puddlebridge sorting office",
+      "description": "A large sorting office, supplying post to much of the surrounding area. At weekends there is always a long queue out the door of people coming to collect packages."
+    },
+    {
+      "key": "park",
+      "name": "Duck Pond",
+      "description": "Probably the most beautiful spot in town. This time of year they have chicks. Let's hope the skateboarders stay clear this time."
+    },
+    {
+      "key": "shop",
+      "name": "Veras Card Shop",
+      "description": "Slightly worn down card shop at the end of the street. The owner smiles at you through the window."
+    },
+    {
+      "key": "pier",
+      "name": "The old Pier",
+      "description": "Once the proudest part of the town, this aging pier is busier with locals this time of year."
+    },
+    {
+      "key": "school",
+      "name": "High Shields School",
+      "description": "The local high school has a new banner outside 'where bright futures start'. That seems optimistic in this town."
+    },
+    {
+      "key": "fishchips",
+      "name": "Johns Fish & Chips",
+      "description": "Proudly using 'locally caught fish' it says on the sign outside."
+    },
+    {
+      "key": "barrowwoods",
+      "name": "Barrow Woods",
+      "description": "The forest at the edge of town is a popular destination in the summer. This time of year most people stay away, preferring to walk near the beach where at least the glow of the town will help you see."
+    },
+    {
+      "key": "beach",
+      "name": "Puddlebridge Beach",
+      "description": "Puddlebridge beach is a small sandy beach with high cliffs and thick shrubbery surrounding it, making it a very secluded spot. The water laps gently against the sand and in summer is rather inviting."
+    },
+    {
+      "key": "church",
+      "name": "Our Lady of the Rosary catholic church",
+      "description": "A large and imposing gothic church from the early 13th century. Once famed for its witch trials, it is now known for its bake sales and remarkably boring sermons."
+    },
+    {
+      "key": "hardwareShop",
+      "name": "The Old Ironmonger",
+      "description": "An impressive looking building with thick stone walls and cast-iron fixtures. It is staffed almost entirely by weather-beaten ex-sailors, no one knows why..."
+    },
+    {
+      "key": "computerRepairShop",
+      "name": "Local PC services",
+      "description": "Boasting same-day repairs on the sign above the door, this shop is deceptively large. Customers see a relatively small shop front crammed with old computer parts, but outback is a large warehouse-like storage area."
+    },
+    {
+      "key": "pub1",
+      "name": "The Brewers Arms",
+      "description": "A self-professed 'old man pub'. It has a distinctive smell of chip fat, stale cigarette smoke, and spilt ale. The core customer base is very loyal to this pub."
+    },
+    {
+      "key": "pub2",
+      "name": "Micronaut",
+      "description": "'The home of craft beer in Puddlebridge'. This pub contains a microbrewery and imports beers from all around the world. It attracts a younger crowd."
+    },
+    {
+      "key": "pub3",
+      "name": "The Fighting Dog",
+      "description": "A rough-looking, flat-roofed pub that attracts Puddlebridges criminal underworld. The kind of place parents urge their children to stay away from."
+    }
+  ],
+  "witness": [
+    {
+      "clue": "Your name is {use your first name} Taylor-Smith. And you lost your sister Imogen."
+    },
+    {
+      "clue": "Today you had blueberry Ice Cream."
+    },
+    {
+      "clue": "Imogen wouldn't let you throw rocks into the sea."
+    },
+    {
+      "clue": "Your teddy is called Ms. Monster Machine because she is part robot."
+    },
+    {
+      "clue": "Your favorite color is Purple."
+    },
+    {
+      "clue": "You like the boy at the duck pond. He lets you feed the ducks."
+    },
+    {
+      "clue": "You hope Dad comes back soon."
+    },
+    {
+      "clue": "You wish it would snow at Christmas."
+    },
+    {
+      "clue": "You want to get chips. You and Imogen always get chips"
+    }
+  ],
+  "people": [
+    {
+      "key": "iceBoy",
+      "location": "pier",
+      "title": "Ice Cream Sales Person",
+      "description": "A young man stands behind an ice cream stand. He looks a little cold but waves at the little girl you are escorting as you walk past.",
+      "conversation": [
+        "Can you help me with my enquiry? Have you ever seen this little girl before? She was traveling with her sister to buy an Ice Cream earlier today.",
+        "Oh, I hope everything is okay. Yes, I served them blueberry ice cream only a few hours ago.",
+        "Did you see where they went afterwards?",
+        "Yes, they went back towards town.",
+        "Can you tell me anything about the older sister.",
+        "She was wearing a bright red coat.",
+        "Thank you for your help.",
+        "No problem, please have a free ice cream scoop for your troubles.",
+        "I really shouldn't I am on the beat.",
+        "I insist. ** hands over ice cream **"
+      ]
+    },
+    {
+      "key": "groundskeeper",
+      "location": "school",
+      "title": "Grounds Keeper",
+      "description": "A man wearing a large scarf carrying a wheelbarrow full of tools trundles past you on the side of the road.",
+      "conversation": [
+        "Hello. Can you help me with my enquiry.",
+        "**Gruff**",
+        "Did you know of any students called Taylor-Smith?",
+        "**Gruff**",
+        "Do you know anywhere where students congregate?",
+        "**Gruff**",
+        "You have a good day sir."
+      ]
+    },
+    {
+      "key": "teacher",
+      "location": "school",
+      "title": "Member of school staff",
+      "description": "You see somebody closing up the school gates. They have small round glasses and a steely stare.",
+      "conversation": [
+        "Hello. Can you help me with my enquiry.",
+        "The school is closed, I am already running late.",
+        "Did you know of any students called Taylor-Smith?",
+        "Indeed, star high jumper. An athletic girl just hangs out with the wrong crowds. Turning into a bad egg.",
+        "What do you mean wrong crowds.",
+        "She insists on hanging out with Jamie O'Toole. A mischievous one that O'Toole. But you lot in uniform should already know about him. He's been in enough trouble recently.",
+        "What kind of trouble?",
+        "Sorry I have been as helpful as I can. Goodbye, and good luck.",
+        "... Thanks I guess"
+      ]
+    },
+    {
+      "key": "jamie",
+      "location": "park",
+      "title": "Quiet boy",
+      "description": "Despite the business of the park this boy seems calm and happy watching the ducks",
+      "conversation": [
+        "Hello. Can you help me with my enquiry.",
+        "I ain't in no trouble am I. I just came here for the ducks. Those boys are the ones who started it.",
+        "Do you know who Imogen Taylor-Smith is?",
+        "Yes, officer I do. Friend of mine from school. Not girlfriend like. She was at the park earlier.",
+        "How long ago?",
+        "Not sure officer. But not long.",
+        "How long did she stay? Did she say anything?",
+        "She said she lost her sister. Have you found her sister have you, police person?",
+        "Her sister is safe with us. We are trying to make sure Imogen is safe.",
+        "Ok. Well, Imogen wasn't making much sense, she said she was going to talk to the boss man.",
+        "What do you mean boss man?",
+        "Scouts officer. She loves it. Got a big man in charge.",
+        "Thank you for your help.",
+        "**The boy turns back towards the pond in silence**"
+      ]
+    },
+    {
+      "key": "dogwalker",
+      "location": "park",
+      "title": "Dancing Dogwalker",
+      "description": "This lady has moves like Jagger, as she dances across with park with at least 11 dogs ahead. A boogie sled team.",
+      "conversation": [
+        "Hello. Can you help me with my enquiry.",
+        "**The lady moves straight past you ignoring your request for help. Maybe she can't hear you, or maybe she can't stop the dogs**"
+      ]
+    },
+    {
+      "key": "park-kids",
+      "location": "park",
+      "title": "Skateboarding Kids",
+      "description": "These kids have some slick moves. Although everybody else in the park seems to be keeping their distance.",
+      "conversation": [
+        "Hello. Can you help me with my enquiry.",
+        "Go away Donut.",
+        "Don't you think Donut is more of an American insult.",
+        "You think that because you are a donut",
+        "You kids need to watch your manners. This is a public space",
+        "Donut",
+        "**You decide some matters are more important**"
+      ]
+    },
+    {
+      "key": "bigjohn",
+      "location": "fishchips",
+      "title": "The tall friendly proprietor",
+      "description": "He seems to be busy balancing both the till and the kitchen. Surely he should have somebody helping him?",
+      "conversation": [
+        "Hello. Can you help me with my enquiry.",
+        "Are you here about a missing child?",
+        "Indeed, we have a young Taylor-Smith in custody. We are looking for her older sister.",
+        "That's amazing news. Imogen has been beside herself. The poor thing is sat in the back booth beside herself.",
+        "Thank you, I will go and break the good news."
+      ]
+    },
+    {
+      "key": "imogen",
+      "location": "fishchips",
+      "title": "Young lady",
+      "description": "A young lady sits alone in the back booth with her big red coat still on.",
+      "conversation": [
+        "Hello. Are you Imogen?",
+        "Yes. Officer, please, have you seen my little sister?",
+        "I have good news she is with us down at the station",
+        "**Imogen leaps up giving you a big hug. John at the counter lets out a deep laugh of relief**"
+      ]
+    },
+    {
+      "key": "mourningman",
+      "location": "barrowwoods",
+      "title": "Distressed Man",
+      "description": "A man stands alone just a short walk from the car park. He looks like he hasn't slept.",
+      "conversation": [
+        "Hello. Can you help me with my enquiry.",
+        "Please leave me alone",
+        "Have you seen anybody pass by recently? We are investigating a missing person.",
+        "Sorry no, I can't help you",
+        "Please sir, is there anything you can share with me. What are you doing here?",
+        "...",
+        "Can I please take your name sir?",
+        "Powell Stevens. Can you go now.",
+        "How long have you been here sir?",
+        "...",
+        "Do you need any help?",
+        "..."
+      ]
+    },
+    {
+      "key": "veraherself",
+      "location": "shop",
+      "title": "Vera",
+      "description": "A confident and friendly lady.",
+      "conversation": [
+        "Hello. Can you help me with my enquiry.",
+        "Of course officer, please wipe your feet as you come in.",
+        "We are investigating a missing child. Young girl, mid-teens? Went missing in this area this afternoon.",
+        "Oh dear, not many children come in here you see. And my eyesight isn't what it used to be.",
+        "Of course, well please let us know if you see anything.",
+        "Would you like a 'Sorry for your loss card'?",
+        "That won't be necessary."
+      ]
+    },
+    {
+      "key": "pier-mother",
+      "location": "pier",
+      "title": "A mother with a pram.",
+      "description": "The baby is talking happily to themselves.",
+      "conversation": [
+        "Hello. Can you help me with my enquiry.",
+        "Erm yes.",
+        "We are investigating a missing child. Young girl, mid-teens? Went missing in this area this afternoon.",
+        "I am sorry, we only just arrived here. I will let you know if we see anything.",
+        "Thank you!"
+      ]
+    },
+    {
+      "key": "pier-musician",
+      "location": "pier",
+      "title": "An older man playing guitar",
+      "description": "His soulful voice fills the area. It may not be busy, but he has quite a lot of change in his case.",
+      "conversation": [
+        "Hello. Can you help me with my enquiry.",
+        "I can but try my man.",
+        "We are investigating a missing child. Young girl, mid-teens? Went missing in this area this afternoon.",
+        "Ain't seen any wandering children, no-no.",
+        "Thank you!",
+        "I have eyes like a hawk. I woulda seen something.",
+        "Well please contact us if you do"
+      ]
+    },
+    {
+      "key": "churchReverend",
+      "location": "church",
+      "title": "Reverend Smallburn",
+      "description": "A thin, pensive looking man. He is deeply engrossed in a bible",
+      "conversation": [
+        "Good afternoon reverend, I was wondering if you can help me?",
+        "**Looks up, startled**. Yes of course officer. Always a pleasure to help out our local constabulary",
+        "A young girl, mid-teens, has gone missing this afternoon. Have you seen or heard anything?",
+        "No, not a peep. Young people are not interested in the word of god these days, they'd rather be looking at the tik toks and the Kim Kardashians. Ghastly if you ask me.",
+        "I see, well thanks for your time anyway.",
+        "Oh officer, I send a complaint in about **whispers** 'nudists' a while back, did you get it?",
+        "Yes we did, but as has already been explained, they aren't actually doing anything illegal.",
+        "Still doesn't seem right to me...",
+        "If that's all I'll be going now.",
+        "Yes, God bless, have a good day."
+      ]
+    }
+  ]
 }
