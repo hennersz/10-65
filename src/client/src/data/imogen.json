@@ -19,20 +19,36 @@
         "key": "death-report",
         "title": "Death Certificate Hope Stevens",
         "body": "Date:14th Jan Spouse:Powell Stevens Cause of death:Horse riding accident Age:32 years Burial Status: Ashes due to be scattered at Barrow Woods"
+    }, {
+        "key": "court-report",
+        "title": "Sheep rustler given life",
+        "body": "Date: 27th Jun 1987, Sentencing Summary: A mr Jenson Fiddlesworth was given life imprisonment for rustling 87 sheep from lightring farm. An unusually harsh punishment that was enabled by an old statute and given by the judge because 'Mr Fiddlesworth showed absolutely no remorse for his crimes and provoked the court'. Mr Fiddlesworths defended himself and his defence consisted of him mooning the jury and saying 'you've got no proof it was me', There was substantial proof, primarily the telltale signs of 87 sheep having been in his back garden."
+    }, {
+        "key": "political-party-registration",
+        "title": "Country side first party registration",
+        "body": "The country side first party is hereby officially registered to run in local council elections. The country side first party represents local farmers and other individuals who want to preserve the english country side"
+    }, {
+        "key": "planning-permission-application", 
+        "title": "Planning application to build a housing estate consisting of 12 houses",
+        "body": "This application has been submitted by Davis and Davis building contractors to build a new estate of 12 houses off of Puddlebridge creek road. This request is granted provided they provide funding to local road improvement and at least 30% of the constructed houses are 'affordable'"
+    }, {
+        "key": "nudist-complaint",
+        "title": "Official compaint by Our Lady of the Rosary catholic church against the Puddlebridge free love naturist society",
+        "body": "The representatives of our lady of the rosary church allege that the Puddlebridge free love naturist society have been corrupting the youth and behaving impiously, specifically relating to the groups weekly meeting at Puddlebridge beach, 7pm every wednesday. This complaint has no legal backing, however the nudist group has been asked politely to be a bit more descrete."
     }],
     "bio": {
         "ROLE_OFFICER": {
-            "bio": "Rough as biscuits",
+            "bio": "Rough as biscuits, you don't always play by the rules, but my god do you get results.",
             "title": "Detective Inspector {your surname}",
             "tip": "Your job is to interview people to find out where Imogen is. To move to a new place you will need to ask your dispatcher."
         },
         "ROLE_BACK_OFFICE": {
-            "bio": "Smart Ass",
+            "bio": "Smart Ass. Can hack your way into any database from here to north Korea. Has a guy to import snus from Sweden, will tell anyone that will listen that Linux, is in fact, GNU/Linux, or as I've recently taken to calling it, GNU plus Linux. Linux is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system components comprising a full OS as defined by POSIX",
             "title": "Back Office Data Expert",
             "tip": "Reading random information may reveal some paths worth investigating. But don't forget to listen to clues revealed by the rest of the team."
         },
         "ROLE_DISPATCHER": {
-            "bio": "You move people around",
+            "bio": "You're just happy to be involved. You move people around.",
             "title": "Dispatcher",
             "tip": "Your job is crutial. Keep the team talking and decide where to send your officer next."
         },
@@ -66,6 +82,22 @@
         "key": "barrowwoods",
         "name": "Barrow Woods",
         "description": "The forrest at the edge of town is a popular destination in the summer. This time of year most people stay away, preferring to walk near the beach were as least the glow of the town will help you see."
+    }, {
+        "key": "beach",
+        "name": "Puddlebridge Beach",
+        "description": "Puddlebridge beach is a small sandy beach with high cliffs and thick shubbery surrounding it, making it a very secluded spot. The water laps gently against the sand and in summer is rather inviting."
+    }, {
+        "key": "church",
+        "name": "Our Lady of the Rosary catholic church",
+        "description":"A large and imposing gothic church from the early 13th century. Once famed for its witch trials, it is now known for its bake sales and remarkably boring sermons."
+    }, {
+        "key": "indianRestaurant",
+        "name": "Raj's Dosa Hut",
+        "description": "Boasting the finest south Indian cuisine for miles around, Raj's has been a favourite of the local community for nearly 30 years now."
+    }, {
+        "key": "garage",
+        "name": "Big Mac's car hole",
+        "description": "A very american looking garage that provides servicing, MOTs and petrol. The proprietor, Mac is often seen wearing a ten gallon hat"
     }],
     "witness": [{
             "clue": "A nice lady called Jane took you the police box"
