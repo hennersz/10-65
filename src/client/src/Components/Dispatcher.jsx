@@ -2,8 +2,24 @@ import data from "../data/imogen.json";
 import React from "react";
 import { getSocket } from "../utils/socket";
 import { MOVE_EVENT } from "../constants";
+import {useState} from "react";
+import Loader from "./Loader";
 
 const Dispatcher = () => {
+    const [isOfficerMoving, setOfficerMoving] = useState(false);
+
+    const bindOnLocationSelect = locationKey => () => {
+        getSocket().emit(MOVE_EVENT, locationKey);
+        setOfficerMoving(true);
+        setTimeout(() => {setOfficerMoving(false)}, 3000);
+    }
+
+    if (isOfficerMoving) {
+        return (
+            <Loader label="Officer is on the move!" />
+        )
+    }
+
     return (
         <div>
             {
@@ -14,7 +30,7 @@ const Dispatcher = () => {
                             <p className="card-text">
                                 {description}
                             </p>
-                            <button onClick={() => getSocket().emit(MOVE_EVENT, key)} class="btn btn-primary mt-2">Move Officer Here</button>
+                            <button onClick={bindOnLocationSelect(key)} class="btn btn-primary mt-2">Move Officer Here</button>
                         </div>
                     </div>
                 ))

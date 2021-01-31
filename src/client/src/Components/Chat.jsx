@@ -1,5 +1,7 @@
 import {useState, useRef, useEffect} from "react";
 import data from '../data/imogen.json';
+import {HANDLE_GAME_WIN} from "../constants";
+import {getSocket} from "../utils/socket";
 
 const Chat = ({ personKey, onClose }) => {
     const [messageIndex, setMessageIndex] = useState(0)
@@ -8,6 +10,13 @@ const Chat = ({ personKey, onClose }) => {
     const messageEndRef = useRef(null);
 
     if (!person) {
+        onClose()
+    }
+
+    const checkWinOnClose = () => {
+        if (personKey === 'imogen' && messageIndex > 2) {
+            getSocket().emit(HANDLE_GAME_WIN);
+        }
         onClose()
     }
 
@@ -52,7 +61,7 @@ const Chat = ({ personKey, onClose }) => {
                     <button onClick={onUserSendMessage} disabled={isSendDisabled} className="btn btn-secondary">
                         Send
                     </button>
-                    <button onClick={onClose} className="btn btn-primary">
+                    <button onClick={checkWinOnClose} className="btn btn-primary">
                         Exit
                     </button>
                 </div>

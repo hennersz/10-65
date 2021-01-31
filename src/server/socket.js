@@ -12,6 +12,8 @@ const {
 } = require('../client/src/constants')
 const ROLES = [ROLE_OFFICER, ROLE_DISPATCHER, ROLE_WITNESS, ROLE_BACK_OFFICE]
 const EventEmitter = require('events')
+const {GAME_WIN} = require("../client/src/constants");
+const {HANDLE_GAME_WIN} = require("../client/src/constants");
 
 class GameServer extends EventEmitter {
   constructor(io) {
@@ -66,6 +68,7 @@ class GameServer extends EventEmitter {
       disconnectFn(socket)
     })
     socket.on('start', this.start.bind(this))
+    socket.on(HANDLE_GAME_WIN, this.onGameWin.bind(this))
     socket.emit('game_state_change', this.state)
     socket.emit('set_role', role)
   }
@@ -79,6 +82,11 @@ class GameServer extends EventEmitter {
   start(){
     this.io.sockets.emit('game_state_change',IN_GAME)
     this.state = IN_GAME
+  }
+
+  onGameWin() {
+    this.io.sockets.emit('game_state_change',GAME_WIN)
+    this.state = GAME_WIN
   }
 
   reset() {

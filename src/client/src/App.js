@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Lobby from "./Components/Lobby";
 import { getSocket } from './utils/socket';
 import {ifDev} from "./utils/ifDev";
+import Loader from "./Components/Loader";
 
 function App() {
   const [isConnected, setConnectedState] = useState(ifDev(true, false))
@@ -25,12 +26,7 @@ function App() {
 
   if (!isConnected) {
     return (
-      <div className=''>
-        <div className="spinner-grow" role="status">
-          <span className="visually-hidden">Loading...</span>
-        </div>
-        <h6 className="mt-4">Connecting to server</h6>
-      </div>
+      <Loader label="Connecting to server" />
     )
   }
 }

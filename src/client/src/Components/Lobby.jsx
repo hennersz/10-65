@@ -6,16 +6,40 @@ import {
     IN_LOBBY,
     UNMATCHED,
     GAME_FULL,
+    GAME_WIN,
     ROLE_OFFICER,
     ROLE_DISPATCHER,
     ROLE_BACK_OFFICE,
-    ROLE_WITNESS
+    ROLE_WITNESS,
 } from "../constants";
 import {ifDev} from "../utils/ifDev";
 
-function Lobby(props) {
+function Lobby() {
     const [gameState, setGameState] = useState(ifDev(IN_GAME, UNMATCHED))
-    const [ role, setRole] = useState(ifDev(ROLE_OFFICER, 'none'))
+    const [ role, setRole] = useState(ifDev(ROLE_WITNESS, 'none'))
+    const [minutes, setMinutes] = useState(0);
+    const [isTimerActive, setIsTimerActive] = useState(false);
+
+    useEffect(() => {
+        let interval = null;
+        if (isTimerActive) {
+            interval = setInterval(() => {
+                setMinutes(seconds => seconds + 1);
+            }, 60000);
+        } else if (!isTimerActive && minutes !== 0) {
+            clearInterval(interval);
+        }
+        return () => clearInterval(interval);
+    }, [isTimerActive, minutes]);
+
+    useEffect(() => {
+        if (gameState === IN_GAME) {
+            setIsTimerActive(true);
+        }
+        if (gameState === GAME_WIN) {
+            setIsTimerActive(false);
+        }
+    }, [gameState])
 
     useEffect(() => {
         getSocket().on('game_state_change', setGameState)
@@ -50,12 +74,20 @@ function Lobby(props) {
             )
         case IN_GAME:
             return (
-                <Game role={role}/>
+                <div>
+                    <Game minutes={minutes} role={role}/>
+                    <div className="mt-2">{minutes + ' minutes into the investigation.'}</div>
+                </div>
             )
         case GAME_FULL:
             return (
+                <h1>The game is full right now, sorry :/</h1>
+            )
+        case GAME_WIN:
+            return (
                 <div>
-                    <h1>The game is full right now, sorry :/</h1>
+                    <h1>Congrats you win!</h1>
+                    <h2>{minutes + ' minutes'}</h2>
                 </div>
             )
     }
