@@ -98,6 +98,34 @@
         "key": "garage",
         "name": "Big Mac's car hole",
         "description": "A very american looking garage that provides servicing, MOTs and petrol. The proprietor, Mac is often seen wearing a ten gallon hat"
+    }, {
+        "key": "postOffice",
+        "name": "Puddlebridge sorting office",
+        "description": "A large sorting office, supplying post to much of the surrounding area. At weekends there is always a long queue out the door of people coming to collect packages."
+    }, {
+        "key": "hardwareShop",
+        "name": "The Old Ironmonger",
+        "description": "An impressive looking building with thick stone walls and cast iron fixtures. It is staffed almost entierly by weather beaten ex-sailors, no one knows why..."
+    }, {
+        "key": "computerRepairShop",
+        "name": "Local PC services",
+        "description": "Boasting same day repairs on the sign above the door, this shop is deceptively large. Customers see a relatively small shop front crammed with old computer parts, but out back is a large warehouse like storage area."
+    }, {
+        "key": "pub1",
+        "name": "The Brewers Arms",
+        "description": "A self professed 'old man pub'. It has a distinctive smell of chip fat, stale cigarette smoke and spilt ale. The core customer base is very loyal to this pub."
+    }, {
+        "key": "pub2",
+        "name": "Micronaut",
+        "description": "'The home of craft beer in Puddlebridge'. This pub contains a microbrewery and imports beers from all around the world. It attracts a younger crowd."
+    }, {
+        "key": "pub3",
+        "name": "The Fighting Dog",
+        "description": "A rough looking, flat roofed pub that attracts Puddlebridges criminal underworld. The kind of place parents urge their children to stay away from."
+    }, {
+        "key": "pub4",
+        "name": "The White Stallion",
+        "description": "A large family friendly pub. With warm fires and hearty meals it's very inviting. The christmas parties they host here are legendary"
     }],
     "witness": [{
             "clue": "A nice lady called Jane took you the police box"
