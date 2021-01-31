@@ -14,9 +14,32 @@ import {
 } from "../constants";
 import {ifDev} from "../utils/ifDev";
 
-function Lobby(props) {
+function Lobby() {
     const [gameState, setGameState] = useState(ifDev(IN_GAME, UNMATCHED))
-    const [ role, setRole] = useState(ifDev(ROLE_DISPATCHER, 'none'))
+    const [ role, setRole] = useState(ifDev(ROLE_OFFICER, 'none'))
+    const [minutes, setMinutes] = useState(0);
+    const [isTimerActive, setIsTimerActive] = useState(false);
+
+    useEffect(() => {
+        let interval = null;
+        if (isTimerActive) {
+            interval = setInterval(() => {
+                setMinutes(seconds => seconds + 1);
+            }, 60000);
+        } else if (!isTimerActive && minutes !== 0) {
+            clearInterval(interval);
+        }
+        return () => clearInterval(interval);
+    }, [isTimerActive, minutes]);
+
+    useEffect(() => {
+        if (gameState === IN_GAME) {
+            setIsTimerActive(true);
+        }
+        if (gameState === GAME_WIN) {
+            setIsTimerActive(false);
+        }
+    }, [gameState])
 
     useEffect(() => {
         getSocket().on('game_state_change', setGameState)
@@ -51,7 +74,10 @@ function Lobby(props) {
             )
         case IN_GAME:
             return (
-                <Game role={role}/>
+                <div>
+                    <Game role={role}/>
+                    <div className="mt-2">{minutes + ' minutes into the investigation.'}</div>
+                </div>
             )
         case GAME_FULL:
             return (
@@ -59,7 +85,10 @@ function Lobby(props) {
             )
         case GAME_WIN:
             return (
-                <h1>Congrats you win!</h1>
+                <div>
+                    <h1>Congrats you win!</h1>
+                    <h2>{minutes + ' minutes'}</h2>
+                </div>
             )
     }
 }
