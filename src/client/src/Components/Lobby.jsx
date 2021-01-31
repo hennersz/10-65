@@ -13,10 +13,11 @@ import {
     ROLE_WITNESS,
 } from "../constants";
 import {ifDev} from "../utils/ifDev";
+import Logo from "./Logo";
 
 const Lobby = () => {
-    const [gameState, setGameState] = useState(ifDev(IN_GAME, UNMATCHED))
-    const [ role, setRole] = useState(ifDev(ROLE_BACK_OFFICE, 'none'))
+    const [gameState, setGameState] = useState(ifDev(GAME_WIN, UNMATCHED))
+    const [ role, setRole] = useState(ifDev(ROLE_OFFICER, 'none'))
     const [minutes, setMinutes] = useState(0);
     const [isTimerActive, setIsTimerActive] = useState(false);
 
@@ -54,15 +55,16 @@ const Lobby = () => {
             getSocket().emit('ready')
             return (
                 <div>
-                    <h1>10-65</h1>
-                    <h6>The co-operative police adventure game for 3 players and 1 witness.</h6>
+                    <Logo />
+                    <h6>Waiting to connect to an empty game.</h6>
                 </div>
             );
         case IN_LOBBY:
             return (
                 <div>
-                    <h1>Sit tight, the show will start soon. You are the {role}</h1>
-                    <h2>Remember your police training.</h2>
+                    <Logo/>
+                    <h3>Sit tight, the show will start soon. You are the {role}</h3>
+                    <h3>Remember your police training.</h3>
                     <h5>Investigate Out Loud</h5>
                     <p>You and your role are unique. Nobody else can see what you are seeing. Share key information clearly.</p>
                     <h5>Listen and Help Others</h5>
@@ -90,6 +92,7 @@ const Lobby = () => {
         case GAME_WIN:
             return (
                 <div>
+                    <Logo/>
                     <h1>Congrats you closed the case!</h1>
                     <h2>{minutes + ' minutes'}</h2>
                 </div>
