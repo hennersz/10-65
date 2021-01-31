@@ -4,6 +4,7 @@ import Chat from "./Chat";
 import { getSocket } from "../utils/socket";
 import {HANDLE_MOVE_EVENT, IN_GAME, UNMATCHED} from "../constants";
 import {ifDev} from "../utils/ifDev";
+import {Button, Card} from "react-bootstrap";
 
 const Officer = () => {
     const [currentKey, setLocation] = useState(ifDev('pier'));
@@ -39,15 +40,15 @@ const Officer = () => {
             }
             {
                 peeps.map(({ key, title, description }) => (
-                    <div className="card">
-                        <div className="card-body">
-                            <h5 className="card-title">{title}</h5>
-                            <p className="card-text">
+                    <Card>
+                        <Card.Body>
+                            <Card.Title>{title}</Card.Title>
+                            <Card.Text>
                                 {description}
-                            </p>
-                            <button onClick={() => setPerson(key)} class="btn btn-primary mt-2">Talk To</button>
-                        </div>
-                    </div>
+                            </Card.Text>
+                            <Button onClick={() => setPerson(key)} variant="primary">Talk To</Button>
+                        </Card.Body>
+                    </Card>
                 ))
             }
         </div>

@@ -2,6 +2,7 @@ import {useState, useRef, useEffect} from "react";
 import data from '../data/imogen.json';
 import {HANDLE_GAME_WIN} from "../constants";
 import {getSocket} from "../utils/socket";
+import {Button, FormControl, InputGroup} from "react-bootstrap";
 
 const Chat = ({ personKey, onClose }) => {
     const [messageIndex, setMessageIndex] = useState(0)
@@ -56,15 +57,15 @@ const Chat = ({ personKey, onClose }) => {
                 <div ref={messageEndRef} />
             </div>
             <div className="p-2">
-                <div className="input-group">
-                    <textarea className="form-control" value={userMessage}></textarea>
-                    <button onClick={onUserSendMessage} disabled={isSendDisabled} className="btn btn-secondary">
+                <InputGroup>
+                    <FormControl as="textarea" value={userMessage} />
+                    <Button variant="secondary" onClick={onUserSendMessage} disabled={isSendDisabled}>
                         Send
-                    </button>
-                    <button onClick={checkWinOnClose} className="btn btn-primary">
+                    </Button>
+                    <Button variant="primary" onClick={checkWinOnClose}>
                         Exit
-                    </button>
-                </div>
+                    </Button>
+                </InputGroup>
             </div>
         </div>
     )
