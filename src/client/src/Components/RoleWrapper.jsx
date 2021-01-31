@@ -12,7 +12,7 @@ const RoleWrapper = ({ role, children }) => {
         <React.Fragment>
             <div class="mb-2">
                 <div class="card-body">
-                    <span class="card-title h4 me-4">{ character.title }</span>
+                    <span class="card-title h4 mr-4">{ character.title }</span>
                     <ButtonGroup>
                         <Button variant="outline-primary" onClick={() => setShowBio(true)}>Bio</Button>
                         <Button variant="outline-primary" onClick={() => setShowCase(true)}>Case</Button>
@@ -25,9 +25,9 @@ const RoleWrapper = ({ role, children }) => {
             }
             <Modal show={showTip} onHide={() => {setShowTip(false)}}>
                 <Modal.Header closeButton>
-                    <Modal.Title>{ character.title + " Tips" }</Modal.Title>
+                    <Modal.Title>{ character.title + " Role" }</Modal.Title>
                 </Modal.Header>
-                <Modal.Body>{ character.tip }</Modal.Body>
+                <Modal.Body>{ character.role }</Modal.Body>
             </Modal>
             <Modal show={showBio} onHide={() => {setShowBio(false)}}>
                 <Modal.Header closeButton>

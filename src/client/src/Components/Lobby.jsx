@@ -62,7 +62,15 @@ const Lobby = () => {
             return (
                 <div>
                     <h1>Sit tight, the show will start soon. You are the {role}</h1>
-
+                    <h2>Remember your police training.</h2>
+                    <h5>Investigate Out Loud</h5>
+                    <p>You and your role are unique. Nobody else can see what you are seeing. Share key information clearly.</p>
+                    <h5>Listen and Help Others</h5>
+                    <p>No case can be closed by a single officer working alone. Others may say clues that may help your investigations.</p>
+                    <h5>Witness Protection</h5>
+                    <p>Be nice to the witness, they may remember things that will help you.</p>
+                    <h5>Keep Notes</h5>
+                    <p>Clues can come from anywhere, it may be useful to take notes.</p>
                     <div className="d-flex flex-column align-items-center mt-2 mb-2">
                         <button onClick={()=>{getSocket().emit('start')}}>Start Game</button>
                     </div>
