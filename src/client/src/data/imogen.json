@@ -256,5 +256,45 @@
             "Do you need any help?",
             "..."
         ]
+    }, {
+        "key": "veraherself",
+        "location": "shop",
+        "title": "Vera",
+        "description": "A confident and friendly lady.",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "Of course officer, please wipe your feet as you come in.",
+            "We are investigating a missing child. Young girl, mid-teens? Went missing in this area this afternoon.",
+            "Oh dear, not many children come in here you see. And my eyesight isn't what it used to be.",
+            "Of course, well please let us know if you see anything.",
+            "Would you like a 'Sorry for your loss card'?",
+            "That won't be necessary."
+        ]
+    }, {
+        "key": "pier-mother",
+        "location": "pier",
+        "title": "A mother with a pram.",
+        "description": "The baby is talking happily to themselves.",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "Erm yes.",
+            "We are investigating a missing child. Young girl, mid-teens? Went missing in this area this afternoon.",
+            "I am sorry, we only just arrived here. I will let you know if we see anything.",
+            "Thank you!"
+        ]
+    }, {
+        "key": "pier-musician",
+        "location": "pier",
+        "title": "An older man playing a guitar",
+        "description": "His soulful voice fills the area. It may not be busy, but he has quite a lot of change in his case.",
+        "conversation": [
+            "Hello. Can you help me with my enquiry.",
+            "I can but try my man.",
+            "We are investigating a missing child. Young girl, mid-teens? Went missing in this area this afternoon.",
+            "Ain't seen any wandering children, no no.",
+            "Thank you!",
+            "I have eyes like a hawk. I wouda seen something.",
+            "Well please contact us if you do"
+        ]
     }]
 }
