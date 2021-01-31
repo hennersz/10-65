@@ -16,7 +16,7 @@ import {ifDev} from "../utils/ifDev";
 
 function Lobby(props) {
     const [gameState, setGameState] = useState(ifDev(IN_GAME, UNMATCHED))
-    const [ role, setRole] = useState(ifDev(ROLE_OFFICER, 'none'))
+    const [ role, setRole] = useState(ifDev(ROLE_DISPATCHER, 'none'))
 
     useEffect(() => {
         getSocket().on('game_state_change', setGameState)
