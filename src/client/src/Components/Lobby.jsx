@@ -16,7 +16,7 @@ import {ifDev} from "../utils/ifDev";
 
 function Lobby() {
     const [gameState, setGameState] = useState(ifDev(IN_GAME, UNMATCHED))
-    const [ role, setRole] = useState(ifDev(ROLE_OFFICER, 'none'))
+    const [ role, setRole] = useState(ifDev(ROLE_WITNESS, 'none'))
     const [minutes, setMinutes] = useState(0);
     const [isTimerActive, setIsTimerActive] = useState(false);
 
@@ -75,7 +75,7 @@ function Lobby() {
         case IN_GAME:
             return (
                 <div>
-                    <Game role={role}/>
+                    <Game minutes={minutes} role={role}/>
                     <div className="mt-2">{minutes + ' minutes into the investigation.'}</div>
                 </div>
             )

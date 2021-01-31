@@ -6,12 +6,12 @@ import Dispatcher from "./Dispatcher";
 import Witness from "./Witness";
 import Officer from "./Officer";
 
-function Game({role}) {
+function Game({role, minutes}) {
     switch(role) {
         case ROLE_WITNESS:
             return (
                 <RoleWrapper role={role}>
-                    <Witness />
+                    <Witness minutes={minutes} />
                 </RoleWrapper>
             )
         case ROLE_DISPATCHER:
