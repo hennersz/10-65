@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import data from '../data/imogen.json'
 import BackOfficeCabinet from "./BackOfficeCabinet";
+import {Button} from "react-bootstrap";
 
 function BackOffice(props) {
     const [article, selectArticle] = useState();
@@ -15,7 +16,7 @@ function BackOffice(props) {
                 <p>
                     {selectedRecord.body}
                 </p>
-                <button onClick={() => selectArticle(undefined)} class="btn btn-primary">Go Back</button>
+                <Button variant="primary" onClick={() => selectArticle(undefined)}>Go Back</Button>
             </div>
         )
     }
