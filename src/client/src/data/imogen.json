@@ -58,22 +58,22 @@
         "ROLE_OFFICER": {
             "bio": "Rough as biscuits, you don't always play by the rules, but my god do you get results.",
             "title": "Detective Inspector {your surname}",
-            "tip": "Your job is to interview people to find out where Imogen is. To move to a new place you will need to ask your dispatcher."
+            "role": "Your job is to interview people to find out where Imogen is. To move to a new place you will need to ask your dispatcher to send you there. They can see all locations available."
         },
         "ROLE_BACK_OFFICE": {
             "bio": "Smart Ass. Can hack your way into any database from here to north Korea. Has a guy to import snus from Sweden, will tell anyone that will listen that Linux, is in fact, GNU/Linux, or as I've recently taken to calling it, GNU plus Linux. Linux is not an operating system unto itself, but rather another free component of a fully functioning GNU system made useful by the GNU corelibs, shell utilities and vital system components comprising a full OS as defined by POSIX",
             "title": "Back Office Data Expert",
-            "tip": "Reading random information may reveal some paths worth investigating. But don't forget to listen to clues revealed by the rest of the team."
+            "role": "You have access to large archive of records relating to the local area. Some may reveal some paths worth investigating but others can lead you on an unrelated tangent. Also don't forget to listen to clues revealed by the rest of the team."
         },
         "ROLE_DISPATCHER": {
             "bio": "You're just happy to be involved. You move people around.",
             "title": "Dispatcher",
-            "tip": "Your job is crutial. Keep the team talking and decide where to send your officer next."
+            "role": "Your job is crucial. You can see every location available and decide where to send your officer for further investigation. Keep the team talking, listen to clues and decide where to send your officer next."
         },
         "ROLE_WITNESS": {
             "bio": "Act as if you were 9 and lost your older sister. Below is all you know.",
             "title": "Witness",
-            "tip": "Share what little information you remember, but try not to exaggerate or make up new ideas. Otherwise you may lead the team off the trail completely."
+            "role": "You are the last person to have seen Imogen. However you are 9 and your memory is cloudy. As time goes by you may remember new things. Share what little information you remember, but try not to exaggerate or make up new ideas. Otherwise you may lead the team off the trail completely."
         }
     },
     "locations": [{
@@ -339,6 +339,23 @@
             "Thank you!",
             "I have eyes like a hawk. I wouda seen something.",
             "Well please contact us if you do"
+        ]
+    }, {
+        "key": "churchReverend",
+        "location": "church",
+        "title": "Reverend Smallburn",
+        "description": "A thin, pensive looking man. He is deeply engrossed in a bible",
+        "conversation": [
+            "Good afternoon reverend, I was wondering if you can help me?",
+            "**Looks up, startled**. Yes of course officer. Always a pleasure to help out our local constabulary",
+            "A young girl, mid teens, has gone missing this afternoon. Have you seen or heard anything?",
+            "No, not a peep. Young people are not interested in the word of god these days, they'd rather be looking at the tik toks and the Kim Kardashians. Ghastly if you ask me.",
+            "I see, well thanks for your time anyway.",
+            "Oh officer, I send a complaint in about **whispers** 'nudists' a while back, did you get it?",
+            "Yes we did, but as has already been explained, they aren't actually doing anything illegal.",
+            "Still doesn't seem right to me...",
+            "If that's all I'll be going now.",
+            "Yes, god bless, have a good day."
         ]
     }]
 }
